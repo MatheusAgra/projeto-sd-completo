@@ -1,0 +1,18 @@
+{
+  "somador_1bit": {"ports": {"A":{"direction":"input","width":1},"B":{"direction":"input","width":1},"Cin":{"direction":"input","width":1},"S":{"direction":"output","width":1},"Cout":{"direction":"output","width":1}}},
+  "sm_para_c2": {"ports": {"SM":{"direction":"input","width":5},"C2":{"direction":"output","width":6}}},
+  "somador_subtrator_6bit": {"ports": {"A":{"direction":"input","width":6},"B":{"direction":"input","width":6},"SUB":{"direction":"input","width":1},"R":{"direction":"output","width":6},"Cout":{"direction":"output","width":1}}},
+  "c2_para_sm": {"ports": {"R":{"direction":"input","width":6},"F_SM":{"direction":"output","width":6}}},
+  "negador_c2_6bit": {"ports": {"B_C2":{"direction":"input","width":6},"NEG":{"direction":"output","width":6}}},
+  "modulo2_soma_sub": {"ports": {"A_C2":{"direction":"input","width":6},"B_C2":{"direction":"input","width":6},"SUB":{"direction":"input","width":1},"F_SM":{"direction":"output","width":6}}},
+  "comparador_c2_6bit": {"ports": {"A_C2":{"direction":"input","width":6},"B_C2":{"direction":"input","width":6},"EQ":{"direction":"output","width":1},"GT":{"direction":"output","width":1},"LT":{"direction":"output","width":1}}},
+  "logica_5bit": {"ports": {"A_SM":{"direction":"input","width":5},"B_SM":{"direction":"input","width":5},"AND6":{"direction":"output","width":6},"XOR6":{"direction":"output","width":6}}},
+  "decodificador_operacao": {"ports": {"S":{"direction":"input","width":3},"D":{"direction":"output","width":8},"EXIBE_F":{"direction":"output","width":1}}},
+  "mux_resultado_8x6": {"ports": {"C0":{"direction":"input","width":6},"C1":{"direction":"input","width":6},"C2":{"direction":"input","width":6},"C3":{"direction":"input","width":6},"C4":{"direction":"input","width":6},"C5":{"direction":"input","width":6},"C6":{"direction":"input","width":6},"C7":{"direction":"input","width":6},"D":{"direction":"input","width":8},"F":{"direction":"output","width":6}}},
+  "ula_core": {"ports": {"A":{"direction":"input","width":5},"B":{"direction":"input","width":5},"S":{"direction":"input","width":3},"F":{"direction":"output","width":6},"STATUS":{"direction":"output","width":1},"EXIBE_F":{"direction":"output","width":1}}},
+  "somador_subtrator_5bit": {"ports": {"A":{"direction":"input","width":5},"B":{"direction":"input","width":5},"SUB":{"direction":"input","width":1},"R":{"direction":"output","width":5},"Cout":{"direction":"output","width":1}}},
+  "bin_bcd": {"ports": {"MAG":{"direction":"input","width":5},"DEZ":{"direction":"output","width":4},"UNI":{"direction":"output","width":4}}},
+  "bcd_7seg": {"ports": {"BCD":{"direction":"input","width":4},"SEG":{"direction":"output","width":7}}},
+  "display_decimal_2digitos": {"ports": {"MAG":{"direction":"input","width":5},"ENABLE":{"direction":"input","width":1},"DEZ_SEG":{"direction":"output","width":7},"UNI_SEG":{"direction":"output","width":7}}},
+  "ula_de2_115": {"ports": {"SW":{"direction":"input","width":13},"LEDR":{"direction":"output","width":18},"LEDG":{"direction":"output","width":9},"HEX0":{"direction":"output","width":7},"HEX1":{"direction":"output","width":7},"HEX2":{"direction":"output","width":7},"HEX3":{"direction":"output","width":7},"HEX4":{"direction":"output","width":7},"HEX5":{"direction":"output","width":7},"HEX6":{"direction":"output","width":7},"HEX7":{"direction":"output","width":7}}}
+}

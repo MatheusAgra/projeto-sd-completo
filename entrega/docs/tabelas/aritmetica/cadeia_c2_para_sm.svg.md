@@ -1,0 +1,1 @@
+A metade esquerda calcula ABS=~R+1 em seis estágios. Em seguida, cinco muxes AND/OR escolhem R[4:0] para número não negativo ou ABS[4:0] para número negativo; sinal=R5 AND OR(R4..R0). Para −32, o resultado efetivo é zero e o caso permanece fora do domínio.

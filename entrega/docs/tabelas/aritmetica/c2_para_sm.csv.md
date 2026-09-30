@@ -1,0 +1,1 @@
+Tabela dos 64 padrões C2. Para −31..31, F_SM contém sinal e magnitude exatos. −32 não é representável: o circuito implementa magnitude ABS[4:0] e sinal R5 AND OR(R4..R0), portanto 100000 gera 000000. Isso descreve a saída efetiva fora do domínio, não uma conversão correta de −32.

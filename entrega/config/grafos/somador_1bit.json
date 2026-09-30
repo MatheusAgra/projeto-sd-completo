@@ -1,0 +1,50 @@
+{
+  "name": "somador_1bit",
+  "instances": [
+    {
+      "type": "XOR",
+      "name": "fa_xor_ab",
+      "connections": {
+        "IN1": "A",
+        "IN2": "B",
+        "OUT": "fa_P"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "fa_xor_pcin",
+      "connections": {
+        "IN1": "fa_P",
+        "IN2": "Cin",
+        "OUT": "S"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "fa_and_ab",
+      "connections": {
+        "IN1": "A",
+        "IN2": "B",
+        "OUT": "fa_G"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "fa_and_pcin",
+      "connections": {
+        "IN1": "fa_P",
+        "IN2": "Cin",
+        "OUT": "fa_H"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "fa_or_carry",
+      "connections": {
+        "IN1": "fa_G",
+        "IN2": "fa_H",
+        "OUT": "Cout"
+      }
+    }
+  ]
+}

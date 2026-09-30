@@ -1,0 +1,147 @@
+/*
+Copyright (C) 1988-1998 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+*/
+/*
+Copyright (C) 1988-1999 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+*/
+(header "graphic" (version "1.4"))
+(pin (input) (rect 64 48 232 64) (text "INPUT" (rect 80 0 115 16) (font "Arial" (font_size 8))) (text "A_SM[4..0]" (rect 4 0 74 16) (font "Arial" (font_size 8))) (pt 168 8) (drawing (line (pt 168 8) (pt 80 8))) (text "VCC" (rect 128 7 149 23) (font "Arial" (font_size 8))))
+(connector (text "A_SM[4..0]" (rect 232 36 302 52) (font "Arial" (font_size 8))) (pt 232 56) (pt 296 56) (bus))
+(pin (input) (rect 64 112 232 128) (text "INPUT" (rect 80 0 115 16) (font "Arial" (font_size 8))) (text "B_SM[4..0]" (rect 4 0 74 16) (font "Arial" (font_size 8))) (pt 168 8) (drawing (line (pt 168 8) (pt 80 8))) (text "VCC" (rect 128 7 149 23) (font "Arial" (font_size 8))))
+(connector (text "B_SM[4..0]" (rect 232 100 302 116) (font "Arial" (font_size 8))) (pt 232 120) (pt 296 120) (bus))
+(pin (output) (rect 64 176 232 192) (text "OUTPUT" (rect 80 0 122 16) (font "Arial" (font_size 8))) (text "AND6[5..0]" (rect 80 0 150 16) (font "Arial" (font_size 8))) (pt 0 8) (drawing (line (pt 0 8) (pt 80 8))))
+(connector (text "AND6[5..0]" (rect 0 164 70 180) (font "Arial" (font_size 8))) (pt 64 184) (pt 0 184) (bus))
+(pin (output) (rect 64 240 232 256) (text "OUTPUT" (rect 80 0 122 16) (font "Arial" (font_size 8))) (text "XOR6[5..0]" (rect 80 0 150 16) (font "Arial" (font_size 8))) (pt 0 8) (drawing (line (pt 0 8) (pt 80 8))))
+(connector (text "XOR6[5..0]" (rect 0 228 70 244) (font "Arial" (font_size 8))) (pt 64 248) (pt 0 248) (bus))
+(symbol (rect 480 64 544 112) (text "AND2" (rect 1 0 22 9) (font "Arial" (font_size 6))) (text "and_bit_0" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 14 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 14 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 42 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 12) (pt 30 12) (line_width 1)) (line (pt 14 37) (pt 31 37) (line_width 1)) (line (pt 14 12) (pt 14 37) (line_width 1)) (arc (pt 31 37) (pt 30 12) (rect 18 12 43 37) (line_width 1))))
+(connector (text "A_SM[0]" (rect 416 60 465 76) (font "Arial" (font_size 8))) (pt 480 80) (pt 416 80))
+(connector (text "B_SM[0]" (rect 416 76 465 92) (font "Arial" (font_size 8))) (pt 480 96) (pt 416 96))
+(connector (text "AND6[0]" (rect 544 68 593 84) (font "Arial" (font_size 8))) (pt 544 88) (pt 608 88))
+(symbol (rect 1120 64 1184 112) (text "XOR" (rect 1 0 18 9) (font "Arial" (font_size 6))) (text "xor_bit_0" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 11 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 11 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 49 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 13) (pt 25 13) (line_width 1)) (line (pt 14 36) (pt 25 36) (line_width 1)) (arc (pt 7 29) (pt 7 19) (rect -14 8 19 41) (line_width 1)) (arc (pt 49 24) (pt 25 13) (rect -6 13 57 76) (line_width 1)) (arc (pt 25 35) (pt 49 24) (rect -6 -27 57 36) (line_width 1)) (arc (pt 8 36) (pt 8 12) (rect -21 7 14 42) (line_width 1))))
+(connector (text "A_SM[0]" (rect 1056 60 1105 76) (font "Arial" (font_size 8))) (pt 1120 80) (pt 1056 80))
+(connector (text "B_SM[0]" (rect 1056 76 1105 92) (font "Arial" (font_size 8))) (pt 1120 96) (pt 1056 96))
+(connector (text "XOR6[0]" (rect 1184 68 1233 84) (font "Arial" (font_size 8))) (pt 1184 88) (pt 1248 88))
+(symbol (rect 1760 64 1824 112) (text "AND2" (rect 1 0 22 9) (font "Arial" (font_size 6))) (text "and_bit_1" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 14 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 14 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 42 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 12) (pt 30 12) (line_width 1)) (line (pt 14 37) (pt 31 37) (line_width 1)) (line (pt 14 12) (pt 14 37) (line_width 1)) (arc (pt 31 37) (pt 30 12) (rect 18 12 43 37) (line_width 1))))
+(connector (text "A_SM[1]" (rect 1696 60 1745 76) (font "Arial" (font_size 8))) (pt 1760 80) (pt 1696 80))
+(connector (text "B_SM[1]" (rect 1696 76 1745 92) (font "Arial" (font_size 8))) (pt 1760 96) (pt 1696 96))
+(connector (text "AND6[1]" (rect 1824 68 1873 84) (font "Arial" (font_size 8))) (pt 1824 88) (pt 1888 88))
+(symbol (rect 480 320 544 368) (text "XOR" (rect 1 0 18 9) (font "Arial" (font_size 6))) (text "xor_bit_1" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 11 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 11 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 49 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 13) (pt 25 13) (line_width 1)) (line (pt 14 36) (pt 25 36) (line_width 1)) (arc (pt 7 29) (pt 7 19) (rect -14 8 19 41) (line_width 1)) (arc (pt 49 24) (pt 25 13) (rect -6 13 57 76) (line_width 1)) (arc (pt 25 35) (pt 49 24) (rect -6 -27 57 36) (line_width 1)) (arc (pt 8 36) (pt 8 12) (rect -21 7 14 42) (line_width 1))))
+(connector (text "A_SM[1]" (rect 416 316 465 332) (font "Arial" (font_size 8))) (pt 480 336) (pt 416 336))
+(connector (text "B_SM[1]" (rect 416 332 465 348) (font "Arial" (font_size 8))) (pt 480 352) (pt 416 352))
+(connector (text "XOR6[1]" (rect 544 324 593 340) (font "Arial" (font_size 8))) (pt 544 344) (pt 608 344))
+(symbol (rect 1120 320 1184 368) (text "AND2" (rect 1 0 22 9) (font "Arial" (font_size 6))) (text "and_bit_2" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 14 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 14 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 42 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 12) (pt 30 12) (line_width 1)) (line (pt 14 37) (pt 31 37) (line_width 1)) (line (pt 14 12) (pt 14 37) (line_width 1)) (arc (pt 31 37) (pt 30 12) (rect 18 12 43 37) (line_width 1))))
+(connector (text "A_SM[2]" (rect 1056 316 1105 332) (font "Arial" (font_size 8))) (pt 1120 336) (pt 1056 336))
+(connector (text "B_SM[2]" (rect 1056 332 1105 348) (font "Arial" (font_size 8))) (pt 1120 352) (pt 1056 352))
+(connector (text "AND6[2]" (rect 1184 324 1233 340) (font "Arial" (font_size 8))) (pt 1184 344) (pt 1248 344))
+(symbol (rect 1760 320 1824 368) (text "XOR" (rect 1 0 18 9) (font "Arial" (font_size 6))) (text "xor_bit_2" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 11 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 11 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 49 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 13) (pt 25 13) (line_width 1)) (line (pt 14 36) (pt 25 36) (line_width 1)) (arc (pt 7 29) (pt 7 19) (rect -14 8 19 41) (line_width 1)) (arc (pt 49 24) (pt 25 13) (rect -6 13 57 76) (line_width 1)) (arc (pt 25 35) (pt 49 24) (rect -6 -27 57 36) (line_width 1)) (arc (pt 8 36) (pt 8 12) (rect -21 7 14 42) (line_width 1))))
+(connector (text "A_SM[2]" (rect 1696 316 1745 332) (font "Arial" (font_size 8))) (pt 1760 336) (pt 1696 336))
+(connector (text "B_SM[2]" (rect 1696 332 1745 348) (font "Arial" (font_size 8))) (pt 1760 352) (pt 1696 352))
+(connector (text "XOR6[2]" (rect 1824 324 1873 340) (font "Arial" (font_size 8))) (pt 1824 344) (pt 1888 344))
+(symbol (rect 480 576 544 624) (text "AND2" (rect 1 0 22 9) (font "Arial" (font_size 6))) (text "and_bit_3" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 14 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 14 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 42 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 12) (pt 30 12) (line_width 1)) (line (pt 14 37) (pt 31 37) (line_width 1)) (line (pt 14 12) (pt 14 37) (line_width 1)) (arc (pt 31 37) (pt 30 12) (rect 18 12 43 37) (line_width 1))))
+(connector (text "A_SM[3]" (rect 416 572 465 588) (font "Arial" (font_size 8))) (pt 480 592) (pt 416 592))
+(connector (text "B_SM[3]" (rect 416 588 465 604) (font "Arial" (font_size 8))) (pt 480 608) (pt 416 608))
+(connector (text "AND6[3]" (rect 544 580 593 596) (font "Arial" (font_size 8))) (pt 544 600) (pt 608 600))
+(symbol (rect 1120 576 1184 624) (text "XOR" (rect 1 0 18 9) (font "Arial" (font_size 6))) (text "xor_bit_3" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 11 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 11 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 49 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 13) (pt 25 13) (line_width 1)) (line (pt 14 36) (pt 25 36) (line_width 1)) (arc (pt 7 29) (pt 7 19) (rect -14 8 19 41) (line_width 1)) (arc (pt 49 24) (pt 25 13) (rect -6 13 57 76) (line_width 1)) (arc (pt 25 35) (pt 49 24) (rect -6 -27 57 36) (line_width 1)) (arc (pt 8 36) (pt 8 12) (rect -21 7 14 42) (line_width 1))))
+(connector (text "A_SM[3]" (rect 1056 572 1105 588) (font "Arial" (font_size 8))) (pt 1120 592) (pt 1056 592))
+(connector (text "B_SM[3]" (rect 1056 588 1105 604) (font "Arial" (font_size 8))) (pt 1120 608) (pt 1056 608))
+(connector (text "XOR6[3]" (rect 1184 580 1233 596) (font "Arial" (font_size 8))) (pt 1184 600) (pt 1248 600))
+(symbol (rect 1760 576 1824 624) (text "AND2" (rect 1 0 22 9) (font "Arial" (font_size 6))) (text "and_bit_4" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 14 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 14 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 42 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 12) (pt 30 12) (line_width 1)) (line (pt 14 37) (pt 31 37) (line_width 1)) (line (pt 14 12) (pt 14 37) (line_width 1)) (arc (pt 31 37) (pt 30 12) (rect 18 12 43 37) (line_width 1))))
+(connector (text "A_SM[4]" (rect 1696 572 1745 588) (font "Arial" (font_size 8))) (pt 1760 592) (pt 1696 592))
+(connector (text "B_SM[4]" (rect 1696 588 1745 604) (font "Arial" (font_size 8))) (pt 1760 608) (pt 1696 608))
+(connector (text "AND6[5]" (rect 1824 580 1873 596) (font "Arial" (font_size 8))) (pt 1824 600) (pt 1888 600))
+(symbol (rect 480 832 544 880) (text "XOR" (rect 1 0 18 9) (font "Arial" (font_size 6))) (text "xor_bit_4" (rect 3 37 18 49) (font "Arial")) (port (pt 0 16) (input) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (text "IN1" (rect 2 7 17 19) (font "Courier New" (bold)) (invisible)) (line (pt 0 16) (pt 11 16) (line_width 1))) (port (pt 0 32) (input) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (text "IN2" (rect 2 23 17 35) (font "Courier New" (bold)) (invisible)) (line (pt 0 32) (pt 11 32) (line_width 1))) (port (pt 64 24) (output) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (text "OUT" (rect 48 15 63 27) (font "Courier New" (bold)) (invisible)) (line (pt 49 24) (pt 64 24) (line_width 1))) (drawing (line (pt 14 13) (pt 25 13) (line_width 1)) (line (pt 14 36) (pt 25 36) (line_width 1)) (arc (pt 7 29) (pt 7 19) (rect -14 8 19 41) (line_width 1)) (arc (pt 49 24) (pt 25 13) (rect -6 13 57 76) (line_width 1)) (arc (pt 25 35) (pt 49 24) (rect -6 -27 57 36) (line_width 1)) (arc (pt 8 36) (pt 8 12) (rect -21 7 14 42) (line_width 1))))
+(connector (text "A_SM[4]" (rect 416 828 465 844) (font "Arial" (font_size 8))) (pt 480 848) (pt 416 848))
+(connector (text "B_SM[4]" (rect 416 844 465 860) (font "Arial" (font_size 8))) (pt 480 864) (pt 416 864))
+(connector (text "XOR6[5]" (rect 544 836 593 852) (font "Arial" (font_size 8))) (pt 544 856) (pt 608 856))
+(symbol (rect 1120 832 1152 864) (text "GND" (rect 8 16 25 25) (font "Arial" (font_size 6))) (text "align_zero_and" (rect 3 21 26 35) (font "Arial" (font_size 7)) (invisible)) (port (pt 16 0) (output) (text "1" (rect 18 0 23 12) (font "Courier New" (bold)) (invisible)) (text "1" (rect 18 0 23 12) (font "Courier New" (bold)) (invisible)) (line (pt 16 8) (pt 16 0) (line_width 1))) (drawing (line (pt 8 8) (pt 16 16) (line_width 1)) (line (pt 16 16) (pt 24 8) (line_width 1)) (line (pt 8 8) (pt 24 8) (line_width 1))))
+(connector (text "AND6[4]" (rect 1136 812 1185 828) (font "Arial" (font_size 8))) (pt 1136 832) (pt 1200 832))
+(symbol (rect 1760 832 1792 864) (text "GND" (rect 8 16 25 25) (font "Arial" (font_size 6))) (text "align_zero_xor" (rect 3 21 26 35) (font "Arial" (font_size 7)) (invisible)) (port (pt 16 0) (output) (text "1" (rect 18 0 23 12) (font "Courier New" (bold)) (invisible)) (text "1" (rect 18 0 23 12) (font "Courier New" (bold)) (invisible)) (line (pt 16 8) (pt 16 0) (line_width 1))) (drawing (line (pt 8 8) (pt 16 16) (line_width 1)) (line (pt 16 16) (pt 24 8) (line_width 1)) (line (pt 8 8) (pt 24 8) (line_width 1))))
+(connector (text "XOR6[4]" (rect 1776 812 1825 828) (font "Arial" (font_size 8))) (pt 1776 832) (pt 1840 832))
+(connector (text "A_SM[4..0]" (rect 480 1132 550 1148) (font "Arial" (font_size 8))) (pt 480 1152) (pt 544 1152) (bus))
+(connector (pt 544 1152) (pt 1040 1152) (bus))
+(connector (text "A_SM[0]" (rect 644 1176 693 1192) (font "Arial" (font_size 8))) (pt 640 1152) (pt 640 1200))
+(junction (pt 640 1152))
+(connector (text "A_SM[1]" (rect 724 1176 773 1192) (font "Arial" (font_size 8))) (pt 720 1152) (pt 720 1200))
+(junction (pt 720 1152))
+(connector (text "A_SM[2]" (rect 804 1176 853 1192) (font "Arial" (font_size 8))) (pt 800 1152) (pt 800 1200))
+(junction (pt 800 1152))
+(connector (text "A_SM[3]" (rect 884 1176 933 1192) (font "Arial" (font_size 8))) (pt 880 1152) (pt 880 1200))
+(junction (pt 880 1152))
+(connector (text "A_SM[4]" (rect 964 1176 1013 1192) (font "Arial" (font_size 8))) (pt 960 1152) (pt 960 1200))
+(junction (pt 960 1152))
+(connector (text "B_SM[4..0]" (rect 480 1228 550 1244) (font "Arial" (font_size 8))) (pt 480 1248) (pt 544 1248) (bus))
+(connector (pt 544 1248) (pt 1040 1248) (bus))
+(connector (text "B_SM[0]" (rect 644 1272 693 1288) (font "Arial" (font_size 8))) (pt 640 1248) (pt 640 1296))
+(junction (pt 640 1248))
+(connector (text "B_SM[1]" (rect 724 1272 773 1288) (font "Arial" (font_size 8))) (pt 720 1248) (pt 720 1296))
+(junction (pt 720 1248))
+(connector (text "B_SM[2]" (rect 804 1272 853 1288) (font "Arial" (font_size 8))) (pt 800 1248) (pt 800 1296))
+(junction (pt 800 1248))
+(connector (text "B_SM[3]" (rect 884 1272 933 1288) (font "Arial" (font_size 8))) (pt 880 1248) (pt 880 1296))
+(junction (pt 880 1248))
+(connector (text "B_SM[4]" (rect 964 1272 1013 1288) (font "Arial" (font_size 8))) (pt 960 1248) (pt 960 1296))
+(junction (pt 960 1248))
+(connector (text "AND6[5..0]" (rect 480 1324 550 1340) (font "Arial" (font_size 8))) (pt 480 1344) (pt 544 1344) (bus))
+(connector (pt 544 1344) (pt 1120 1344) (bus))
+(connector (text "AND6[0]" (rect 644 1368 693 1384) (font "Arial" (font_size 8))) (pt 640 1344) (pt 640 1392))
+(junction (pt 640 1344))
+(connector (text "AND6[1]" (rect 724 1368 773 1384) (font "Arial" (font_size 8))) (pt 720 1344) (pt 720 1392))
+(junction (pt 720 1344))
+(connector (text "AND6[2]" (rect 804 1368 853 1384) (font "Arial" (font_size 8))) (pt 800 1344) (pt 800 1392))
+(junction (pt 800 1344))
+(connector (text "AND6[3]" (rect 884 1368 933 1384) (font "Arial" (font_size 8))) (pt 880 1344) (pt 880 1392))
+(junction (pt 880 1344))
+(connector (text "AND6[4]" (rect 964 1368 1013 1384) (font "Arial" (font_size 8))) (pt 960 1344) (pt 960 1392))
+(junction (pt 960 1344))
+(connector (text "AND6[5]" (rect 1044 1368 1093 1384) (font "Arial" (font_size 8))) (pt 1040 1344) (pt 1040 1392))
+(junction (pt 1040 1344))
+(connector (text "XOR6[5..0]" (rect 480 1420 550 1436) (font "Arial" (font_size 8))) (pt 480 1440) (pt 544 1440) (bus))
+(connector (pt 544 1440) (pt 1120 1440) (bus))
+(connector (text "XOR6[0]" (rect 644 1464 693 1480) (font "Arial" (font_size 8))) (pt 640 1440) (pt 640 1488))
+(junction (pt 640 1440))
+(connector (text "XOR6[1]" (rect 724 1464 773 1480) (font "Arial" (font_size 8))) (pt 720 1440) (pt 720 1488))
+(junction (pt 720 1440))
+(connector (text "XOR6[2]" (rect 804 1464 853 1480) (font "Arial" (font_size 8))) (pt 800 1440) (pt 800 1488))
+(junction (pt 800 1440))
+(connector (text "XOR6[3]" (rect 884 1464 933 1480) (font "Arial" (font_size 8))) (pt 880 1440) (pt 880 1488))
+(junction (pt 880 1440))
+(connector (text "XOR6[4]" (rect 964 1464 1013 1480) (font "Arial" (font_size 8))) (pt 960 1440) (pt 960 1488))
+(junction (pt 960 1440))
+(connector (text "XOR6[5]" (rect 1044 1464 1093 1480) (font "Arial" (font_size 8))) (pt 1040 1440) (pt 1040 1488))
+(junction (pt 1040 1440))

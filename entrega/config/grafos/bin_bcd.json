@@ -1,0 +1,206 @@
+{
+  "name": "bin_bcd",
+  "instances": [
+    {
+      "type": "OR2",
+      "name": "or10_mid",
+      "connections": {
+        "IN1": "MAG[2]",
+        "IN2": "MAG[1]",
+        "OUT": "O10_MID"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and10_hi",
+      "connections": {
+        "IN1": "MAG[3]",
+        "IN2": "O10_MID",
+        "OUT": "A10_HI"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or10",
+      "connections": {
+        "IN1": "MAG[4]",
+        "IN2": "A10_HI",
+        "OUT": "T10"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or20_mid",
+      "connections": {
+        "IN1": "MAG[3]",
+        "IN2": "MAG[2]",
+        "OUT": "O20_MID"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and20",
+      "connections": {
+        "IN1": "MAG[4]",
+        "IN2": "O20_MID",
+        "OUT": "T20"
+      }
+    },
+    {
+      "type": "AND4",
+      "name": "and30",
+      "connections": {
+        "IN1": "MAG[4]",
+        "IN2": "MAG[3]",
+        "IN3": "MAG[2]",
+        "IN4": "MAG[1]",
+        "OUT": "T30"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not20",
+      "connections": {
+        "IN": "T20",
+        "OUT": "NT20"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and_dez0_a",
+      "connections": {
+        "IN1": "T10",
+        "IN2": "NT20",
+        "OUT": "DEZ0_A"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_dez0",
+      "connections": {
+        "IN1": "DEZ0_A",
+        "IN2": "T30",
+        "OUT": "DEZ0_INTERNAL"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "buf_dez0",
+      "connections": {
+        "IN": "DEZ0_INTERNAL",
+        "OUT": "DEZ[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "buf_dez1",
+      "connections": {
+        "IN": "T20",
+        "OUT": "DEZ[1]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "dez2_zero",
+      "connections": {
+        "1": "DEZ[2]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "dez3_zero",
+      "connections": {
+        "1": "DEZ[3]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "sub_enable",
+      "connections": {
+        "1": "SUB_ONE"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "k0_zero",
+      "connections": {
+        "1": "K[0]"
+      }
+    },
+    {
+      "type": "somador_subtrator_5bit",
+      "name": "subtract_tens",
+      "connections": {
+        "A": "MAG[4..0]",
+        "B": "K[4..0]",
+        "SUB": "SUB_ONE",
+        "R": "UNI_RAW[4..0]",
+        "Cout": "COUT_UNUSED"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "unit_bit_0",
+      "connections": {
+        "IN": "UNI_RAW[0]",
+        "OUT": "UNI[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "unit_bit_1",
+      "connections": {
+        "IN": "UNI_RAW[1]",
+        "OUT": "UNI[1]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "unit_bit_2",
+      "connections": {
+        "IN": "UNI_RAW[2]",
+        "OUT": "UNI[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "unit_bit_3",
+      "connections": {
+        "IN": "UNI_RAW[3]",
+        "OUT": "UNI[3]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "correction_bit_4",
+      "connections": {
+        "IN": "T20",
+        "OUT": "K[4]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "correction_bit_3",
+      "connections": {
+        "IN": "DEZ0_INTERNAL",
+        "OUT": "K[3]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "correction_bit_2",
+      "connections": {
+        "IN": "T20",
+        "OUT": "K[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "correction_bit_1",
+      "connections": {
+        "IN": "DEZ0_INTERNAL",
+        "OUT": "K[1]"
+      }
+    }
+  ]
+}

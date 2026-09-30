@@ -1,0 +1,299 @@
+{
+  "name": "comparador_c2_6bit",
+  "instances": [
+    {
+      "type": "XNOR",
+      "name": "eq_bit_0",
+      "connections": {
+        "IN1": "A_C2[0]",
+        "IN2": "B_C2[0]",
+        "OUT": "EQBIT_0"
+      }
+    },
+    {
+      "type": "XNOR",
+      "name": "eq_bit_1",
+      "connections": {
+        "IN1": "A_C2[1]",
+        "IN2": "B_C2[1]",
+        "OUT": "EQBIT_1"
+      }
+    },
+    {
+      "type": "XNOR",
+      "name": "eq_bit_2",
+      "connections": {
+        "IN1": "A_C2[2]",
+        "IN2": "B_C2[2]",
+        "OUT": "EQBIT_2"
+      }
+    },
+    {
+      "type": "XNOR",
+      "name": "eq_bit_3",
+      "connections": {
+        "IN1": "A_C2[3]",
+        "IN2": "B_C2[3]",
+        "OUT": "EQBIT_3"
+      }
+    },
+    {
+      "type": "XNOR",
+      "name": "eq_bit_4",
+      "connections": {
+        "IN1": "A_C2[4]",
+        "IN2": "B_C2[4]",
+        "OUT": "EQBIT_4"
+      }
+    },
+    {
+      "type": "XNOR",
+      "name": "eq_bit_5",
+      "connections": {
+        "IN1": "A_C2[5]",
+        "IN2": "B_C2[5]",
+        "OUT": "EQBIT_5"
+      }
+    },
+    {
+      "type": "AND6",
+      "name": "eq_all",
+      "connections": {
+        "IN1": "EQBIT_0",
+        "IN2": "EQBIT_1",
+        "IN3": "EQBIT_2",
+        "IN4": "EQBIT_3",
+        "IN5": "EQBIT_4",
+        "IN6": "EQBIT_5",
+        "OUT": "EQ"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_sign",
+      "connections": {
+        "IN": "A_C2[5]",
+        "OUT": "NAS"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_b_sign",
+      "connections": {
+        "IN": "B_C2[5]",
+        "OUT": "NBS"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_0",
+      "connections": {
+        "IN": "A_C2[0]",
+        "OUT": "NA_0"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_1",
+      "connections": {
+        "IN": "A_C2[1]",
+        "OUT": "NA_1"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_2",
+      "connections": {
+        "IN": "A_C2[2]",
+        "OUT": "NA_2"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_3",
+      "connections": {
+        "IN": "A_C2[3]",
+        "OUT": "NA_3"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_a_4",
+      "connections": {
+        "IN": "A_C2[4]",
+        "OUT": "NA_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "equal_prefix_2",
+      "connections": {
+        "IN1": "EQBIT_4",
+        "IN2": "EQBIT_3",
+        "OUT": "EQHI_2"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "equal_prefix_1",
+      "connections": {
+        "IN1": "EQBIT_4",
+        "IN2": "EQBIT_3",
+        "IN3": "EQBIT_2",
+        "OUT": "EQHI_1"
+      }
+    },
+    {
+      "type": "AND4",
+      "name": "equal_prefix_0",
+      "connections": {
+        "IN1": "EQBIT_4",
+        "IN2": "EQBIT_3",
+        "IN3": "EQBIT_2",
+        "IN4": "EQBIT_1",
+        "OUT": "EQHI_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "unsigned_lt_4",
+      "connections": {
+        "IN1": "NA_4",
+        "IN2": "B_C2[4]",
+        "OUT": "ULT_TERM_4"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "unsigned_lt_3",
+      "connections": {
+        "IN1": "EQBIT_4",
+        "IN2": "NA_3",
+        "IN3": "B_C2[3]",
+        "OUT": "ULT_TERM_3"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "unsigned_lt_2",
+      "connections": {
+        "IN1": "EQHI_2",
+        "IN2": "NA_2",
+        "IN3": "B_C2[2]",
+        "OUT": "ULT_TERM_2"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "unsigned_lt_1",
+      "connections": {
+        "IN1": "EQHI_1",
+        "IN2": "NA_1",
+        "IN3": "B_C2[1]",
+        "OUT": "ULT_TERM_1"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "unsigned_lt_0",
+      "connections": {
+        "IN1": "EQHI_0",
+        "IN2": "NA_0",
+        "IN3": "B_C2[0]",
+        "OUT": "ULT_TERM_0"
+      }
+    },
+    {
+      "type": "OR3",
+      "name": "unsigned_lt_low",
+      "connections": {
+        "IN1": "ULT_TERM_4",
+        "IN2": "ULT_TERM_3",
+        "IN3": "ULT_TERM_2",
+        "OUT": "ULT_LOW"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "unsigned_lt_high",
+      "connections": {
+        "IN1": "ULT_TERM_1",
+        "IN2": "ULT_TERM_0",
+        "OUT": "ULT_HIGH"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "unsigned_lt",
+      "connections": {
+        "IN1": "ULT_LOW",
+        "IN2": "ULT_HIGH",
+        "OUT": "ULT"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_a_lt",
+      "connections": {
+        "IN1": "A_C2[5]",
+        "IN2": "NBS",
+        "OUT": "NEG_A_LT"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "positive_lt",
+      "connections": {
+        "IN1": "NAS",
+        "IN2": "NBS",
+        "IN3": "ULT",
+        "OUT": "POS_LT"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_both",
+      "connections": {
+        "IN1": "A_C2[5]",
+        "IN2": "B_C2[5]",
+        "OUT": "NEG_BOTH"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_unsigned_lt",
+      "connections": {
+        "IN1": "NEG_BOTH",
+        "IN2": "ULT",
+        "OUT": "NEG_LT"
+      }
+    },
+    {
+      "type": "OR3",
+      "name": "signed_lt",
+      "connections": {
+        "IN1": "NEG_A_LT",
+        "IN2": "POS_LT",
+        "IN3": "NEG_LT",
+        "OUT": "LT"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "eq_or_lt",
+      "connections": {
+        "IN1": "EQ",
+        "IN2": "LT",
+        "OUT": "EQ_OR_LT"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "signed_gt",
+      "connections": {
+        "IN": "EQ_OR_LT",
+        "OUT": "GT"
+      }
+    }
+  ]
+}

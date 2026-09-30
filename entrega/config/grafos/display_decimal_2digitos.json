@@ -1,0 +1,164 @@
+{
+  "name": "display_decimal_2digitos",
+  "instances": [
+    {
+      "type": "bin_bcd",
+      "name": "convert_mag",
+      "connections": {
+        "MAG": "MAG[4..0]",
+        "DEZ": "BCD_DEZ[3..0]",
+        "UNI": "BCD_UNI[3..0]"
+      }
+    },
+    {
+      "type": "bcd_7seg",
+      "name": "decode_dez",
+      "connections": {
+        "BCD": "BCD_DEZ[3..0]",
+        "SEG": "DEZ_RAW[6..0]"
+      }
+    },
+    {
+      "type": "bcd_7seg",
+      "name": "decode_uni",
+      "connections": {
+        "BCD": "BCD_UNI[3..0]",
+        "SEG": "UNI_RAW[6..0]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "disable_mask",
+      "connections": {
+        "IN": "ENABLE",
+        "OUT": "DISABLED"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_0",
+      "connections": {
+        "IN1": "DEZ_RAW[0]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[0]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_0",
+      "connections": {
+        "IN1": "UNI_RAW[0]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[0]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_1",
+      "connections": {
+        "IN1": "DEZ_RAW[1]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[1]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_1",
+      "connections": {
+        "IN1": "UNI_RAW[1]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[1]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_2",
+      "connections": {
+        "IN1": "DEZ_RAW[2]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[2]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_2",
+      "connections": {
+        "IN1": "UNI_RAW[2]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[2]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_3",
+      "connections": {
+        "IN1": "DEZ_RAW[3]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[3]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_3",
+      "connections": {
+        "IN1": "UNI_RAW[3]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[3]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_4",
+      "connections": {
+        "IN1": "DEZ_RAW[4]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[4]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_4",
+      "connections": {
+        "IN1": "UNI_RAW[4]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[4]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_5",
+      "connections": {
+        "IN1": "DEZ_RAW[5]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[5]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_5",
+      "connections": {
+        "IN1": "UNI_RAW[5]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[5]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_dez_6",
+      "connections": {
+        "IN1": "DEZ_RAW[6]",
+        "IN2": "DISABLED",
+        "OUT": "DEZ_SEG[6]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "mask_uni_6",
+      "connections": {
+        "IN1": "UNI_RAW[6]",
+        "IN2": "DISABLED",
+        "OUT": "UNI_SEG[6]"
+      }
+    }
+  ]
+}

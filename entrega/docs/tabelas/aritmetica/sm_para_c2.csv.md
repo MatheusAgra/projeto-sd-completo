@@ -1,0 +1,1 @@
+Tabela completa de 32 padrões do conversor sinal-magnitude para C2. O cálculo de referência usa o inteiro assinado e reduz a codificação C2 a seis bits; os dois padrões de zero têm valor e saída zero.

@@ -1,0 +1,118 @@
+{
+  "name": "decodificador_operacao",
+  "instances": [
+    {
+      "type": "NOT",
+      "name": "not_s_0",
+      "connections": {
+        "IN": "S[0]",
+        "OUT": "NS_0"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_s_1",
+      "connections": {
+        "IN": "S[1]",
+        "OUT": "NS_1"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "not_s_2",
+      "connections": {
+        "IN": "S[2]",
+        "OUT": "NS_2"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_0",
+      "connections": {
+        "IN1": "NS_2",
+        "IN2": "NS_1",
+        "IN3": "NS_0",
+        "OUT": "D[0]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_1",
+      "connections": {
+        "IN1": "NS_2",
+        "IN2": "NS_1",
+        "IN3": "S[0]",
+        "OUT": "D[1]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_2",
+      "connections": {
+        "IN1": "NS_2",
+        "IN2": "S[1]",
+        "IN3": "NS_0",
+        "OUT": "D[2]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_3",
+      "connections": {
+        "IN1": "NS_2",
+        "IN2": "S[1]",
+        "IN3": "S[0]",
+        "OUT": "D[3]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_4",
+      "connections": {
+        "IN1": "S[2]",
+        "IN2": "NS_1",
+        "IN3": "NS_0",
+        "OUT": "D[4]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_5",
+      "connections": {
+        "IN1": "S[2]",
+        "IN2": "NS_1",
+        "IN3": "S[0]",
+        "OUT": "D[5]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_6",
+      "connections": {
+        "IN1": "S[2]",
+        "IN2": "S[1]",
+        "IN3": "NS_0",
+        "OUT": "D[6]"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "decode_7",
+      "connections": {
+        "IN1": "S[2]",
+        "IN2": "S[1]",
+        "IN3": "S[0]",
+        "OUT": "D[7]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "show_f",
+      "connections": {
+        "IN1": "NS_2",
+        "IN2": "NS_1",
+        "OUT": "EXIBE_F"
+      }
+    }
+  ]
+}

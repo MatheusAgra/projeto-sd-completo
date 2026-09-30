@@ -1,0 +1,1 @@
+Seis somadores completos recebem X[i], zero e o carry anterior. O carry inicial é o sinal SM[4]. Os quatro bits baixos de Z vêm da magnitude; Z[5:4]=00. A imagem mostra o caminho de carry, não substitui as ligações individuais descritas no grafo.

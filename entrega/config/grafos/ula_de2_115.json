@@ -1,0 +1,439 @@
+{
+  "name": "ula_de2_115",
+  "instances": [
+    {
+      "type": "ula_core",
+      "name": "ula",
+      "connections": {
+        "A": "SW[4..0]",
+        "B": "SW[9..5]",
+        "S": "SW[12..10]",
+        "F": "F[5..0]",
+        "STATUS": "STATUS",
+        "EXIBE_F": "EXIBE_F"
+      }
+    },
+    {
+      "type": "display_decimal_2digitos",
+      "name": "display_a",
+      "connections": {
+        "MAG": "MAGA[4..0]",
+        "ENABLE": "ONE",
+        "DEZ_SEG": "HEX5[6..0]",
+        "UNI_SEG": "HEX4[6..0]"
+      }
+    },
+    {
+      "type": "display_decimal_2digitos",
+      "name": "display_b",
+      "connections": {
+        "MAG": "MAGB[4..0]",
+        "ENABLE": "ONE",
+        "DEZ_SEG": "HEX3[6..0]",
+        "UNI_SEG": "HEX2[6..0]"
+      }
+    },
+    {
+      "type": "display_decimal_2digitos",
+      "name": "display_f",
+      "connections": {
+        "MAG": "F[4..0]",
+        "ENABLE": "EXIBE_F",
+        "DEZ_SEG": "HEX1[6..0]",
+        "UNI_SEG": "HEX0[6..0]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "habilitacao_entradas",
+      "connections": {
+        "1": "ONE"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_a_0",
+      "connections": {
+        "IN": "SW[0]",
+        "OUT": "MAGA[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_b_0",
+      "connections": {
+        "IN": "SW[5]",
+        "OUT": "MAGB[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_a_1",
+      "connections": {
+        "IN": "SW[1]",
+        "OUT": "MAGA[1]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_b_1",
+      "connections": {
+        "IN": "SW[6]",
+        "OUT": "MAGB[1]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_a_2",
+      "connections": {
+        "IN": "SW[2]",
+        "OUT": "MAGA[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_b_2",
+      "connections": {
+        "IN": "SW[7]",
+        "OUT": "MAGB[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_a_3",
+      "connections": {
+        "IN": "SW[3]",
+        "OUT": "MAGA[3]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mag_b_3",
+      "connections": {
+        "IN": "SW[8]",
+        "OUT": "MAGB[3]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_MAGA",
+      "connections": {
+        "1": "MAGA[4]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_MAGB",
+      "connections": {
+        "1": "MAGB[4]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_0",
+      "connections": {
+        "IN": "SW[0]",
+        "OUT": "LEDR[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_1",
+      "connections": {
+        "IN": "SW[1]",
+        "OUT": "LEDR[1]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_2",
+      "connections": {
+        "IN": "SW[2]",
+        "OUT": "LEDR[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_3",
+      "connections": {
+        "IN": "SW[3]",
+        "OUT": "LEDR[3]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_4",
+      "connections": {
+        "IN": "SW[4]",
+        "OUT": "LEDR[4]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_5",
+      "connections": {
+        "IN": "SW[5]",
+        "OUT": "LEDR[5]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_6",
+      "connections": {
+        "IN": "SW[6]",
+        "OUT": "LEDR[6]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_7",
+      "connections": {
+        "IN": "SW[7]",
+        "OUT": "LEDR[7]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_8",
+      "connections": {
+        "IN": "SW[8]",
+        "OUT": "LEDR[8]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_9",
+      "connections": {
+        "IN": "SW[9]",
+        "OUT": "LEDR[9]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_10",
+      "connections": {
+        "IN": "SW[10]",
+        "OUT": "LEDR[10]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_11",
+      "connections": {
+        "IN": "SW[11]",
+        "OUT": "LEDR[11]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "mirror_12",
+      "connections": {
+        "IN": "SW[12]",
+        "OUT": "LEDR[12]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledr_off_13",
+      "connections": {
+        "1": "LEDR[13]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledr_off_14",
+      "connections": {
+        "1": "LEDR[14]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledr_off_15",
+      "connections": {
+        "1": "LEDR[15]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledr_off_16",
+      "connections": {
+        "1": "LEDR[16]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledr_off_17",
+      "connections": {
+        "1": "LEDR[17]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_0",
+      "connections": {
+        "IN": "F[0]",
+        "OUT": "LEDG[0]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_1",
+      "connections": {
+        "IN": "F[1]",
+        "OUT": "LEDG[1]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_2",
+      "connections": {
+        "IN": "F[2]",
+        "OUT": "LEDG[2]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_3",
+      "connections": {
+        "IN": "F[3]",
+        "OUT": "LEDG[3]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_4",
+      "connections": {
+        "IN": "F[4]",
+        "OUT": "LEDG[4]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_5",
+      "connections": {
+        "IN": "F[5]",
+        "OUT": "LEDG[5]"
+      }
+    },
+    {
+      "type": "BUF",
+      "name": "ledg_6",
+      "connections": {
+        "IN": "STATUS",
+        "OUT": "LEDG[6]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledg_off_7",
+      "connections": {
+        "1": "LEDG[7]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "ledg_off_8",
+      "connections": {
+        "1": "LEDG[8]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_0",
+      "connections": {
+        "1": "HEX6[0]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_1",
+      "connections": {
+        "1": "HEX6[1]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_2",
+      "connections": {
+        "1": "HEX6[2]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_3",
+      "connections": {
+        "1": "HEX6[3]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_4",
+      "connections": {
+        "1": "HEX6[4]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_5",
+      "connections": {
+        "1": "HEX6[5]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_6_6",
+      "connections": {
+        "1": "HEX6[6]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_0",
+      "connections": {
+        "1": "HEX7[0]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_1",
+      "connections": {
+        "1": "HEX7[1]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_2",
+      "connections": {
+        "1": "HEX7[2]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_3",
+      "connections": {
+        "1": "HEX7[3]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_4",
+      "connections": {
+        "1": "HEX7[4]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_5",
+      "connections": {
+        "1": "HEX7[5]"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "hex_off_7_6",
+      "connections": {
+        "1": "HEX7[6]"
+      }
+    }
+  ]
+}

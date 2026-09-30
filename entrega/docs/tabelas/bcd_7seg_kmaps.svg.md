@@ -1,0 +1,1 @@
+Mapa de Karnaugh com linhas e colunas em ordem Gray 00, 01, 11, 10. No mapa de cinco variáveis, cada camada fixa MAG[4] e usa MAG[3:2] nas linhas e MAG[1:0] nas colunas. No mapa de quatro variáveis, BCD[3:2] ocupa as linhas e BCD[1:0] as colunas.

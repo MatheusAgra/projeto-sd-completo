@@ -1,0 +1,132 @@
+{
+  "name": "sm_para_c2",
+  "instances": [
+    {
+      "type": "XOR",
+      "name": "xor_sinal_0",
+      "connections": {
+        "IN1": "SM[0]",
+        "IN2": "SM[4]",
+        "OUT": "X[0]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sinal_1",
+      "connections": {
+        "IN1": "SM[1]",
+        "IN2": "SM[4]",
+        "OUT": "X[1]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sinal_2",
+      "connections": {
+        "IN1": "SM[2]",
+        "IN2": "SM[4]",
+        "OUT": "X[2]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sinal_3",
+      "connections": {
+        "IN1": "SM[3]",
+        "IN2": "SM[4]",
+        "OUT": "X[3]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sinal_4",
+      "connections": {
+        "IN1": "GND",
+        "IN2": "SM[4]",
+        "OUT": "X[4]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sinal_5",
+      "connections": {
+        "IN1": "GND",
+        "IN2": "SM[4]",
+        "OUT": "X[5]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_0",
+      "connections": {
+        "A": "X[0]",
+        "B": "GND",
+        "Cin": "SM[4]",
+        "S": "C2[0]",
+        "Cout": "CARRY[1]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_1",
+      "connections": {
+        "A": "X[1]",
+        "B": "GND",
+        "Cin": "CARRY[1]",
+        "S": "C2[1]",
+        "Cout": "CARRY[2]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_2",
+      "connections": {
+        "A": "X[2]",
+        "B": "GND",
+        "Cin": "CARRY[2]",
+        "S": "C2[2]",
+        "Cout": "CARRY[3]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_3",
+      "connections": {
+        "A": "X[3]",
+        "B": "GND",
+        "Cin": "CARRY[3]",
+        "S": "C2[3]",
+        "Cout": "CARRY[4]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_4",
+      "connections": {
+        "A": "X[4]",
+        "B": "GND",
+        "Cin": "CARRY[4]",
+        "S": "C2[4]",
+        "Cout": "CARRY[5]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_5",
+      "connections": {
+        "A": "X[5]",
+        "B": "GND",
+        "Cin": "CARRY[5]",
+        "S": "C2[5]",
+        "Cout": "Cout"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "gnd",
+      "connections": {
+        "1": "GND"
+      }
+    }
+  ]
+}

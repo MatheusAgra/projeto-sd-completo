@@ -1,0 +1,247 @@
+{
+  "name": "bcd_7seg",
+  "instances": [
+    {
+      "type": "NOT",
+      "name": "invert_bcd_0",
+      "connections": {
+        "IN": "BCD[0]",
+        "OUT": "NBCD0"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_bcd_1",
+      "connections": {
+        "IN": "BCD[1]",
+        "OUT": "NBCD1"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_bcd_2",
+      "connections": {
+        "IN": "BCD[2]",
+        "OUT": "NBCD2"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_bcd_3",
+      "connections": {
+        "IN": "BCD[3]",
+        "OUT": "NBCD3"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_x111",
+      "connections": {
+        "IN1": "BCD[2]",
+        "IN2": "BCD[1]",
+        "IN3": "BCD[0]",
+        "OUT": "P_x111"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_000x",
+      "connections": {
+        "IN1": "NBCD3",
+        "IN2": "NBCD2",
+        "IN3": "NBCD1",
+        "OUT": "P_000x"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "product_1x1x",
+      "connections": {
+        "IN1": "BCD[3]",
+        "IN2": "BCD[1]",
+        "OUT": "P_1x1x"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "product_11xx",
+      "connections": {
+        "IN1": "BCD[3]",
+        "IN2": "BCD[2]",
+        "OUT": "P_11xx"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "product_xx11",
+      "connections": {
+        "IN1": "BCD[1]",
+        "IN2": "BCD[0]",
+        "OUT": "P_xx11"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "product_x01x",
+      "connections": {
+        "IN1": "NBCD2",
+        "IN2": "BCD[1]",
+        "OUT": "P_x01x"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_00x1",
+      "connections": {
+        "IN1": "NBCD3",
+        "IN2": "NBCD2",
+        "IN3": "BCD[0]",
+        "OUT": "P_00x1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "product_x10x",
+      "connections": {
+        "IN1": "BCD[2]",
+        "IN2": "NBCD1",
+        "OUT": "P_x10x"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_x100",
+      "connections": {
+        "IN1": "BCD[2]",
+        "IN2": "NBCD1",
+        "IN3": "NBCD0",
+        "OUT": "P_x100"
+      }
+    },
+    {
+      "type": "AND4",
+      "name": "product_0001",
+      "connections": {
+        "IN1": "NBCD3",
+        "IN2": "NBCD2",
+        "IN3": "NBCD1",
+        "IN4": "BCD[0]",
+        "OUT": "P_0001"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_x010",
+      "connections": {
+        "IN1": "NBCD2",
+        "IN2": "BCD[1]",
+        "IN3": "NBCD0",
+        "OUT": "P_x010"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_x101",
+      "connections": {
+        "IN1": "BCD[2]",
+        "IN2": "NBCD1",
+        "IN3": "BCD[0]",
+        "OUT": "P_x101"
+      }
+    },
+    {
+      "type": "AND3",
+      "name": "product_x110",
+      "connections": {
+        "IN1": "BCD[2]",
+        "IN2": "BCD[1]",
+        "IN3": "NBCD0",
+        "OUT": "P_x110"
+      }
+    },
+    {
+      "type": "OR4",
+      "name": "or_segment_g",
+      "connections": {
+        "IN1": "P_x111",
+        "IN2": "P_000x",
+        "IN3": "P_1x1x",
+        "IN4": "P_11xx",
+        "OUT": "SEG[6]"
+      }
+    },
+    {
+      "type": "OR4",
+      "name": "or_segment_f",
+      "connections": {
+        "IN1": "P_xx11",
+        "IN2": "P_x01x",
+        "IN3": "P_00x1",
+        "IN4": "P_11xx",
+        "OUT": "SEG[5]"
+      }
+    },
+    {
+      "type": "OR3",
+      "name": "or_segment_e",
+      "connections": {
+        "IN1": "BCD[0]",
+        "IN2": "P_x10x",
+        "IN3": "P_1x1x",
+        "OUT": "SEG[4]"
+      }
+    },
+    {
+      "type": "OR4",
+      "name": "or_segment_d",
+      "connections": {
+        "IN1": "P_x100",
+        "IN2": "P_x111",
+        "IN3": "P_0001",
+        "IN4": "P_1x1x",
+        "OUT": "OR_D_FIRST"
+      }
+    },
+    {
+      "type": "OR3",
+      "name": "or_segment_c",
+      "connections": {
+        "IN1": "P_x010",
+        "IN2": "P_1x1x",
+        "IN3": "P_11xx",
+        "OUT": "SEG[2]"
+      }
+    },
+    {
+      "type": "OR4",
+      "name": "or_segment_b",
+      "connections": {
+        "IN1": "P_x101",
+        "IN2": "P_x110",
+        "IN3": "P_1x1x",
+        "IN4": "P_11xx",
+        "OUT": "SEG[1]"
+      }
+    },
+    {
+      "type": "OR4",
+      "name": "or_segment_a",
+      "connections": {
+        "IN1": "P_x100",
+        "IN2": "P_0001",
+        "IN3": "P_1x1x",
+        "IN4": "P_11xx",
+        "OUT": "SEG[0]"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_segment_d_final",
+      "connections": {
+        "IN1": "OR_D_FIRST",
+        "IN2": "P_11xx",
+        "OUT": "SEG[3]"
+      }
+    }
+  ]
+}

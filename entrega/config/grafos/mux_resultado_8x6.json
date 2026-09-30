@@ -1,0 +1,527 @@
+{
+  "name": "mux_resultado_8x6",
+  "instances": [
+    {
+      "type": "AND2",
+      "name": "gate_c0_b0",
+      "connections": {
+        "IN1": "C0[0]",
+        "IN2": "D[0]",
+        "OUT": "P_0_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c0_b1",
+      "connections": {
+        "IN1": "C0[1]",
+        "IN2": "D[0]",
+        "OUT": "P_0_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c0_b2",
+      "connections": {
+        "IN1": "C0[2]",
+        "IN2": "D[0]",
+        "OUT": "P_0_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c0_b3",
+      "connections": {
+        "IN1": "C0[3]",
+        "IN2": "D[0]",
+        "OUT": "P_0_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c0_b4",
+      "connections": {
+        "IN1": "C0[4]",
+        "IN2": "D[0]",
+        "OUT": "P_0_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c0_b5",
+      "connections": {
+        "IN1": "C0[5]",
+        "IN2": "D[0]",
+        "OUT": "P_0_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b0",
+      "connections": {
+        "IN1": "C1[0]",
+        "IN2": "D[1]",
+        "OUT": "P_1_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b1",
+      "connections": {
+        "IN1": "C1[1]",
+        "IN2": "D[1]",
+        "OUT": "P_1_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b2",
+      "connections": {
+        "IN1": "C1[2]",
+        "IN2": "D[1]",
+        "OUT": "P_1_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b3",
+      "connections": {
+        "IN1": "C1[3]",
+        "IN2": "D[1]",
+        "OUT": "P_1_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b4",
+      "connections": {
+        "IN1": "C1[4]",
+        "IN2": "D[1]",
+        "OUT": "P_1_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c1_b5",
+      "connections": {
+        "IN1": "C1[5]",
+        "IN2": "D[1]",
+        "OUT": "P_1_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b0",
+      "connections": {
+        "IN1": "C2[0]",
+        "IN2": "D[2]",
+        "OUT": "P_2_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b1",
+      "connections": {
+        "IN1": "C2[1]",
+        "IN2": "D[2]",
+        "OUT": "P_2_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b2",
+      "connections": {
+        "IN1": "C2[2]",
+        "IN2": "D[2]",
+        "OUT": "P_2_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b3",
+      "connections": {
+        "IN1": "C2[3]",
+        "IN2": "D[2]",
+        "OUT": "P_2_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b4",
+      "connections": {
+        "IN1": "C2[4]",
+        "IN2": "D[2]",
+        "OUT": "P_2_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c2_b5",
+      "connections": {
+        "IN1": "C2[5]",
+        "IN2": "D[2]",
+        "OUT": "P_2_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b0",
+      "connections": {
+        "IN1": "C3[0]",
+        "IN2": "D[3]",
+        "OUT": "P_3_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b1",
+      "connections": {
+        "IN1": "C3[1]",
+        "IN2": "D[3]",
+        "OUT": "P_3_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b2",
+      "connections": {
+        "IN1": "C3[2]",
+        "IN2": "D[3]",
+        "OUT": "P_3_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b3",
+      "connections": {
+        "IN1": "C3[3]",
+        "IN2": "D[3]",
+        "OUT": "P_3_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b4",
+      "connections": {
+        "IN1": "C3[4]",
+        "IN2": "D[3]",
+        "OUT": "P_3_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c3_b5",
+      "connections": {
+        "IN1": "C3[5]",
+        "IN2": "D[3]",
+        "OUT": "P_3_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b0",
+      "connections": {
+        "IN1": "C4[0]",
+        "IN2": "D[4]",
+        "OUT": "P_4_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b1",
+      "connections": {
+        "IN1": "C4[1]",
+        "IN2": "D[4]",
+        "OUT": "P_4_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b2",
+      "connections": {
+        "IN1": "C4[2]",
+        "IN2": "D[4]",
+        "OUT": "P_4_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b3",
+      "connections": {
+        "IN1": "C4[3]",
+        "IN2": "D[4]",
+        "OUT": "P_4_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b4",
+      "connections": {
+        "IN1": "C4[4]",
+        "IN2": "D[4]",
+        "OUT": "P_4_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c4_b5",
+      "connections": {
+        "IN1": "C4[5]",
+        "IN2": "D[4]",
+        "OUT": "P_4_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b0",
+      "connections": {
+        "IN1": "C5[0]",
+        "IN2": "D[5]",
+        "OUT": "P_5_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b1",
+      "connections": {
+        "IN1": "C5[1]",
+        "IN2": "D[5]",
+        "OUT": "P_5_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b2",
+      "connections": {
+        "IN1": "C5[2]",
+        "IN2": "D[5]",
+        "OUT": "P_5_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b3",
+      "connections": {
+        "IN1": "C5[3]",
+        "IN2": "D[5]",
+        "OUT": "P_5_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b4",
+      "connections": {
+        "IN1": "C5[4]",
+        "IN2": "D[5]",
+        "OUT": "P_5_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c5_b5",
+      "connections": {
+        "IN1": "C5[5]",
+        "IN2": "D[5]",
+        "OUT": "P_5_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b0",
+      "connections": {
+        "IN1": "C6[0]",
+        "IN2": "D[6]",
+        "OUT": "P_6_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b1",
+      "connections": {
+        "IN1": "C6[1]",
+        "IN2": "D[6]",
+        "OUT": "P_6_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b2",
+      "connections": {
+        "IN1": "C6[2]",
+        "IN2": "D[6]",
+        "OUT": "P_6_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b3",
+      "connections": {
+        "IN1": "C6[3]",
+        "IN2": "D[6]",
+        "OUT": "P_6_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b4",
+      "connections": {
+        "IN1": "C6[4]",
+        "IN2": "D[6]",
+        "OUT": "P_6_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c6_b5",
+      "connections": {
+        "IN1": "C6[5]",
+        "IN2": "D[6]",
+        "OUT": "P_6_5"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b0",
+      "connections": {
+        "IN1": "C7[0]",
+        "IN2": "D[7]",
+        "OUT": "P_7_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b1",
+      "connections": {
+        "IN1": "C7[1]",
+        "IN2": "D[7]",
+        "OUT": "P_7_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b2",
+      "connections": {
+        "IN1": "C7[2]",
+        "IN2": "D[7]",
+        "OUT": "P_7_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b3",
+      "connections": {
+        "IN1": "C7[3]",
+        "IN2": "D[7]",
+        "OUT": "P_7_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b4",
+      "connections": {
+        "IN1": "C7[4]",
+        "IN2": "D[7]",
+        "OUT": "P_7_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "gate_c7_b5",
+      "connections": {
+        "IN1": "C7[5]",
+        "IN2": "D[7]",
+        "OUT": "P_7_5"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_0",
+      "connections": {
+        "IN1": "P_0_0",
+        "IN2": "P_1_0",
+        "IN3": "P_2_0",
+        "IN4": "P_3_0",
+        "IN5": "P_4_0",
+        "IN6": "P_5_0",
+        "IN7": "P_6_0",
+        "IN8": "P_7_0",
+        "OUT": "F[0]"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_1",
+      "connections": {
+        "IN1": "P_0_1",
+        "IN2": "P_1_1",
+        "IN3": "P_2_1",
+        "IN4": "P_3_1",
+        "IN5": "P_4_1",
+        "IN6": "P_5_1",
+        "IN7": "P_6_1",
+        "IN8": "P_7_1",
+        "OUT": "F[1]"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_2",
+      "connections": {
+        "IN1": "P_0_2",
+        "IN2": "P_1_2",
+        "IN3": "P_2_2",
+        "IN4": "P_3_2",
+        "IN5": "P_4_2",
+        "IN6": "P_5_2",
+        "IN7": "P_6_2",
+        "IN8": "P_7_2",
+        "OUT": "F[2]"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_3",
+      "connections": {
+        "IN1": "P_0_3",
+        "IN2": "P_1_3",
+        "IN3": "P_2_3",
+        "IN4": "P_3_3",
+        "IN5": "P_4_3",
+        "IN6": "P_5_3",
+        "IN7": "P_6_3",
+        "IN8": "P_7_3",
+        "OUT": "F[3]"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_4",
+      "connections": {
+        "IN1": "P_0_4",
+        "IN2": "P_1_4",
+        "IN3": "P_2_4",
+        "IN4": "P_3_4",
+        "IN5": "P_4_4",
+        "IN6": "P_5_4",
+        "IN7": "P_6_4",
+        "IN8": "P_7_4",
+        "OUT": "F[4]"
+      }
+    },
+    {
+      "type": "OR8",
+      "name": "sum_bit_5",
+      "connections": {
+        "IN1": "P_0_5",
+        "IN2": "P_1_5",
+        "IN3": "P_2_5",
+        "IN4": "P_3_5",
+        "IN5": "P_4_5",
+        "IN6": "P_5_5",
+        "IN7": "P_6_5",
+        "IN8": "P_7_5",
+        "OUT": "F[5]"
+      }
+    }
+  ]
+}

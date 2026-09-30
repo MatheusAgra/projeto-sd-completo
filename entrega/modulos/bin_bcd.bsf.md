@@ -1,0 +1,21 @@
+# bin_bcd.bsf
+
+## Objetivo
+
+Símbolo gráfico da entidade `bin_bcd`, com as portas definidas no contrato congelado.
+
+## Entradas e saídas
+
+`MAG[4:0]` é entrada de cinco bits; `DEZ[3:0]` e `UNI[3:0]` são saídas de quatro bits cada.
+
+## Funcionamento
+
+O BSF representa a interface de `bin_bcd` e não contém a lógica de conversão. A implementação é o grafo do arquivo `bin_bcd.bdf`; `somador_subtrator_5bit` é sua dependência hierárquica.
+
+## Exemplo
+
+Uma instância conectada com `MAG=23` deve apresentar `DEZ=2` e `UNI=3`.
+
+## Verificação
+
+O Quartus gerou o símbolo a partir do HDL convertido do BDF. O teste de interface confirmou que nomes, direções e larguras coincidem com `interfaces.json`; a lógica funcional foi testada no HDL convertido pelo BDF, não no BSF, que é apenas interface gráfica.

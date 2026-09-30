@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526579"/></marker>
+  <style>
+    text{font-family:Arial,sans-serif;fill:#172b3a}.title{font-size:40px;font-weight:700}.section{font-size:25px;font-weight:700}.box{font-size:23px;font-weight:700}.detail{font-size:18px}.small{font-size:16px}.flow{fill:none;stroke:#526579;stroke-width:4;marker-end:url(#arrow)}.link{fill:none;stroke:#526579;stroke-width:3;marker-end:url(#arrow)}.bus{fill:none;stroke:#526579;stroke-width:5;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1800" height="1320" fill="#ffffff"/>
+<text x="900" y="62" text-anchor="middle" class="title">Arquitetura da ULA combinacional — DE2-115</text>
+<text x="900" y="99" text-anchor="middle" class="detail">Visão funcional derivada das interfaces e dos grafos estruturais</text>
+<!-- input field -->
+<rect x="45" y="145" width="330" height="190" rx="18" fill="#edf4fb" stroke="#3975a8" stroke-width="3"/>
+<text x="210" y="183" text-anchor="middle" class="section">Entradas físicas</text>
+<text x="75" y="222" class="detail">A = SW[4..0] • B = SW[9..5]</text>
+<text x="75" y="253" class="detail">S = SW[12..10]</text>
+<text x="75" y="284" class="detail">SW[3..0], SW[8..5]: magnitudes</text>
+<text x="75" y="313" class="small">SW[4], SW[9]: sinais</text>
+<!-- converters -->
+<rect x="435" y="145" width="300" height="190" rx="18" fill="#e9f5f1" stroke="#31836c" stroke-width="3"/>
+<text x="585" y="183" text-anchor="middle" class="section">Conversores</text>
+<text x="585" y="225" text-anchor="middle" class="box">sm_para_c2 × 2</text>
+<text x="585" y="259" text-anchor="middle" class="detail">A, B → C2[5..0]</text>
+<text x="585" y="298" text-anchor="middle" class="small">caminho para aritmética/comparação</text>
+<!-- operation blocks -->
+<rect x="795" y="145" width="450" height="190" rx="18" fill="#fff3df" stroke="#bf7a18" stroke-width="3"/>
+<text x="1020" y="183" text-anchor="middle" class="section">Operadores paralelos</text>
+<text x="1020" y="222" text-anchor="middle" class="detail">Soma/subtração C2 • negação de B</text>
+<text x="1020" y="254" text-anchor="middle" class="detail">Comparador signed • AND/XOR bit a bit</text>
+<text x="1020" y="294" text-anchor="middle" class="small">lógica usa diretamente os vetores A/B de 5 bits</text>
+<!-- mux -->
+<rect x="1320" y="145" width="420" height="190" rx="18" fill="#f4edfa" stroke="#8055a7" stroke-width="3"/>
+<text x="1530" y="183" text-anchor="middle" class="section">Controle e seleção</text>
+<text x="1530" y="224" text-anchor="middle" class="box">decodificador de S</text>
+<text x="1530" y="258" text-anchor="middle" class="detail">D[7..0] → mux 8×6 → F[5..0]</text>
+<text x="1530" y="294" text-anchor="middle" class="small">EXIBE_F habilita HEX0/HEX1 em S=000/001</text>
+<!-- arrows top -->
+<path d="M375 238 H435" class="bus"/>
+<path d="M735 215 H795" class="bus"/>
+<path d="M1245 240 H1320" class="bus"/>
+<path d="M375 286 C560 380 1100 380 1445 336" class="link"/>
+<text x="900" y="368" text-anchor="middle" class="small">S[2..0] controla decodificador, mux e habilitação do display F</text>
+<!-- display decode path -->
+<rect x="80" y="480" width="420" height="210" rx="18" fill="#e9f5f1" stroke="#31836c" stroke-width="3"/>
+<text x="290" y="520" text-anchor="middle" class="section">Exibição de A e B</text>
+<text x="290" y="562" text-anchor="middle" class="box">MAG A/B → bin_bcd</text>
+<text x="290" y="596" text-anchor="middle" class="detail">→ bcd_7seg × 2 → displays</text>
+<text x="290" y="633" text-anchor="middle" class="small">A e B exibem magnitudes, sem sinal</text>
+<rect x="600" y="480" width="430" height="210" rx="18" fill="#f4edfa" stroke="#8055a7" stroke-width="3"/>
+<text x="815" y="520" text-anchor="middle" class="section">Exibição do resultado F</text>
+<text x="815" y="562" text-anchor="middle" class="box">F[4..0] → bin_bcd</text>
+<text x="815" y="596" text-anchor="middle" class="detail">→ bcd_7seg × 2 → HEX0/HEX1</text>
+<text x="815" y="633" text-anchor="middle" class="small">habilitado somente em soma/subtração</text>
+<rect x="1130" y="480" width="590" height="210" rx="18" fill="#edf4fb" stroke="#3975a8" stroke-width="3"/>
+<text x="1425" y="520" text-anchor="middle" class="section">Saídas de status e espelhamento</text>
+<text x="1425" y="562" text-anchor="middle" class="detail">LEDR[12..0] espelha SW[12..0]</text>
+<text x="1425" y="596" text-anchor="middle" class="detail">LEDG[5..0] = F • LEDG[6] = STATUS</text>
+<text x="1425" y="633" text-anchor="middle" class="small">LEDR[17..13], LEDG[8..7] ficam em zero</text>
+<!-- connectors -->
+<path d="M210 335 V430 H290 V480" class="link"/>
+<text x="120" y="420" class="small">magnitudes SW</text>
+<path d="M1530 335 V425 H815 V480" class="bus"/>
+<text x="1080" y="414" class="small">F[4..0] e EXIBE_F</text>
+<path d="M1245 284 C1325 410 1450 415 1450 480" class="link"/>
+<!-- board map -->
+<rect x="80" y="790" width="1640" height="445" rx="18" fill="#f7f9fb" stroke="#718293" stroke-width="3"/>
+<text x="900" y="836" text-anchor="middle" class="section">Mapeamento lógico nos displays e LEDs</text>
+<line x1="900" y1="860" x2="900" y2="1210" stroke="#c2cbd3" stroke-width="2"/>
+<text x="120" y="885" class="box">Displays de sete segmentos</text>
+<text x="120" y="930" class="detail">HEX5 = dezenas de A • HEX4 = unidades de A</text>
+<text x="120" y="970" class="detail">HEX3 = dezenas de B • HEX2 = unidades de B</text>
+<text x="120" y="1010" class="detail">HEX1 = dezenas de F • HEX0 = unidades de F</text>
+<text x="120" y="1050" class="detail">HEX7 e HEX6 apagados (segmentos ativos em zero)</text>
+<text x="120" y="1120" class="small">A/B mostram magnitudes; F é exibido apenas para S=000 ou S=001.</text>
+<text x="960" y="885" class="box">LEDs</text>
+<text x="960" y="930" class="detail">LEDR[12..0] = SW[12..0] (espelhamento)</text>
+<text x="960" y="970" class="detail">LEDR[17..13] = 0</text>
+<text x="960" y="1010" class="detail">LEDG[5..0] = F[5..0]</text>
+<text x="960" y="1050" class="detail">LEDG[6] = STATUS • LEDG[8..7] = 0</text>
+<text x="960" y="1120" class="small">SW[12..10] seleciona a operação; bit alto de cada operando é o sinal.</text>
+</svg>

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 30 02:06:43 2026
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : ULA_DE2_115
+Top-level Entity Name : ula_de2_115
+Family : Cyclone IV E
+Total logic elements : 100
+    Total combinational functions : 100
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 96
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

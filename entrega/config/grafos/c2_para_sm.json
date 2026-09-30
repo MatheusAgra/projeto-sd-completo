@@ -1,0 +1,321 @@
+{
+  "name": "c2_para_sm",
+  "instances": [
+    {
+      "type": "NOT",
+      "name": "invert_0",
+      "connections": {
+        "IN": "R[0]",
+        "OUT": "NOT_R[0]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_1",
+      "connections": {
+        "IN": "R[1]",
+        "OUT": "NOT_R[1]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_2",
+      "connections": {
+        "IN": "R[2]",
+        "OUT": "NOT_R[2]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_3",
+      "connections": {
+        "IN": "R[3]",
+        "OUT": "NOT_R[3]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_4",
+      "connections": {
+        "IN": "R[4]",
+        "OUT": "NOT_R[4]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_5",
+      "connections": {
+        "IN": "R[5]",
+        "OUT": "NOT_R[5]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_0",
+      "connections": {
+        "A": "NOT_R[0]",
+        "B": "GND",
+        "Cin": "VCC",
+        "S": "ABS[0]",
+        "Cout": "CARRY[1]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_1",
+      "connections": {
+        "A": "NOT_R[1]",
+        "B": "GND",
+        "Cin": "CARRY[1]",
+        "S": "ABS[1]",
+        "Cout": "CARRY[2]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_2",
+      "connections": {
+        "A": "NOT_R[2]",
+        "B": "GND",
+        "Cin": "CARRY[2]",
+        "S": "ABS[2]",
+        "Cout": "CARRY[3]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_3",
+      "connections": {
+        "A": "NOT_R[3]",
+        "B": "GND",
+        "Cin": "CARRY[3]",
+        "S": "ABS[3]",
+        "Cout": "CARRY[4]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_4",
+      "connections": {
+        "A": "NOT_R[4]",
+        "B": "GND",
+        "Cin": "CARRY[4]",
+        "S": "ABS[4]",
+        "Cout": "CARRY[5]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_abs_5",
+      "connections": {
+        "A": "NOT_R[5]",
+        "B": "GND",
+        "Cin": "CARRY[5]",
+        "S": "ABS[5]",
+        "Cout": "Cout"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "gnd",
+      "connections": {
+        "1": "GND"
+      }
+    },
+    {
+      "type": "VCC",
+      "name": "vcc",
+      "connections": {
+        "1": "VCC"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_mag_01",
+      "connections": {
+        "IN1": "R[0]",
+        "IN2": "R[1]",
+        "OUT": "MAG_OR_01"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_mag_23",
+      "connections": {
+        "IN1": "R[2]",
+        "IN2": "R[3]",
+        "OUT": "MAG_OR_23"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_mag_0123",
+      "connections": {
+        "IN1": "MAG_OR_01",
+        "IN2": "MAG_OR_23",
+        "OUT": "MAG_OR_0123"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "or_mag_01234",
+      "connections": {
+        "IN1": "MAG_OR_0123",
+        "IN2": "R[4]",
+        "OUT": "MAG_NONZERO"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "sign_nonzero",
+      "connections": {
+        "IN1": "R[5]",
+        "IN2": "MAG_NONZERO",
+        "OUT": "F_SM[5]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "positive_mag_0",
+      "connections": {
+        "IN1": "R[0]",
+        "IN2": "NOT_SIGN",
+        "OUT": "POS_0"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_mag_0",
+      "connections": {
+        "IN1": "ABS[0]",
+        "IN2": "R[5]",
+        "OUT": "NEG_0"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "magnitude_mux_0",
+      "connections": {
+        "IN1": "POS_0",
+        "IN2": "NEG_0",
+        "OUT": "F_SM[0]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "positive_mag_1",
+      "connections": {
+        "IN1": "R[1]",
+        "IN2": "NOT_SIGN",
+        "OUT": "POS_1"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_mag_1",
+      "connections": {
+        "IN1": "ABS[1]",
+        "IN2": "R[5]",
+        "OUT": "NEG_1"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "magnitude_mux_1",
+      "connections": {
+        "IN1": "POS_1",
+        "IN2": "NEG_1",
+        "OUT": "F_SM[1]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "positive_mag_2",
+      "connections": {
+        "IN1": "R[2]",
+        "IN2": "NOT_SIGN",
+        "OUT": "POS_2"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_mag_2",
+      "connections": {
+        "IN1": "ABS[2]",
+        "IN2": "R[5]",
+        "OUT": "NEG_2"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "magnitude_mux_2",
+      "connections": {
+        "IN1": "POS_2",
+        "IN2": "NEG_2",
+        "OUT": "F_SM[2]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "positive_mag_3",
+      "connections": {
+        "IN1": "R[3]",
+        "IN2": "NOT_SIGN",
+        "OUT": "POS_3"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_mag_3",
+      "connections": {
+        "IN1": "ABS[3]",
+        "IN2": "R[5]",
+        "OUT": "NEG_3"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "magnitude_mux_3",
+      "connections": {
+        "IN1": "POS_3",
+        "IN2": "NEG_3",
+        "OUT": "F_SM[3]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "positive_mag_4",
+      "connections": {
+        "IN1": "R[4]",
+        "IN2": "NOT_SIGN",
+        "OUT": "POS_4"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "negative_mag_4",
+      "connections": {
+        "IN1": "ABS[4]",
+        "IN2": "R[5]",
+        "OUT": "NEG_4"
+      }
+    },
+    {
+      "type": "OR2",
+      "name": "magnitude_mux_4",
+      "connections": {
+        "IN1": "POS_4",
+        "IN2": "NEG_4",
+        "OUT": "F_SM[4]"
+      }
+    },
+    {
+      "type": "NOT",
+      "name": "invert_sign",
+      "connections": {
+        "IN": "R[5]",
+        "OUT": "NOT_SIGN"
+      }
+    }
+  ]
+}

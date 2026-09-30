@@ -1,0 +1,24 @@
+{
+  "name": "modulo2_soma_sub",
+  "instances": [
+    {
+      "type": "somador_subtrator_6bit",
+      "name": "soma_sub",
+      "connections": {
+        "A": "A_C2[5..0]",
+        "B": "B_C2[5..0]",
+        "SUB": "SUB",
+        "R": "R_C2[5..0]",
+        "Cout": "COUT"
+      }
+    },
+    {
+      "type": "c2_para_sm",
+      "name": "conversor",
+      "connections": {
+        "R": "R_C2[5..0]",
+        "F_SM": "F_SM[5..0]"
+      }
+    }
+  ]
+}

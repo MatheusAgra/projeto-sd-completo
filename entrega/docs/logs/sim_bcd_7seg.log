@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/bcd_7seg.vcd opened for output.
+tb_bcd_7seg passou em 16 vetores
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_bcd_7seg.sv:34: $finish called at 16 (1s)

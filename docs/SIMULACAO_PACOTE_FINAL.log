@@ -1,0 +1,48 @@
+VCD info: dumpfile waveforms/somador_1bit.vcd opened for output.
+tb_somador_1bit PASS checks=8
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_somador_1bit.sv:29: $finish called at 8 (1s)
+VCD info: dumpfile waveforms/sm_para_c2.vcd opened for output.
+tb_sm_para_c2 PASS checks=32
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_sm_para_c2.sv:24: $finish called at 32 (1s)
+VCD info: dumpfile waveforms/somador_subtrator_6bit.vcd opened for output.
+tb_somador_subtrator_6bit PASS checks=8192
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_somador_subtrator_6bit.sv:31: $finish called at 8192 (1s)
+VCD info: dumpfile waveforms/c2_para_sm.vcd opened for output.
+tb_c2_para_sm PASS checks=64 incluindo -32 fora do domínio
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_c2_para_sm.sv:24: $finish called at 64 (1s)
+VCD info: dumpfile waveforms/negador_c2_6bit.vcd opened for output.
+tb_negador_c2_6bit PASS checks=64
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_negador_c2_6bit.sv:22: $finish called at 64 (1s)
+VCD info: dumpfile waveforms/modulo2_soma_sub.vcd opened for output.
+tb_modulo2_soma_sub PASS checks=1922
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_modulo2_soma_sub.sv:48: $finish called at 1922 (1s)
+VCD info: dumpfile waveforms/comparador_c2_6bit.vcd opened for output.
+PASS comparador_c2_6bit: 4096 pares signed C2
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_comparador_c2_6bit.sv:29: $finish called at 4096 (1s)
+VCD info: dumpfile waveforms/logica_5bit.vcd opened for output.
+PASS logica_5bit: 1024 pares
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_logica_5bit.sv:27: $finish called at 1024 (1s)
+VCD info: dumpfile waveforms/decodificador_operacao.vcd opened for output.
+PASS decodificador_operacao: 8 seletores
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_decodificador_operacao.sv:21: $finish called at 8 (1s)
+VCD info: dumpfile waveforms/mux_resultado_8x6.vcd opened for output.
+PASS mux_resultado_8x6: 512 estímulos um-hot
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_mux_resultado_8x6.sv:33: $finish called at 512 (1s)
+VCD info: dumpfile waveforms/ula_core.vcd opened for output.
+tb_ula_core PASS checks=8192
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_ula_core.sv:48: $finish called at 81920000 (1ps)
+VCD info: dumpfile waveforms/somador_subtrator_5bit.vcd opened for output.
+tb_somador_subtrator_5bit PASS checks=2048
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_somador_subtrator_5bit.sv:31: $finish called at 2048 (1s)
+VCD info: dumpfile waveforms/bin_bcd.vcd opened for output.
+tb_bin_bcd passou em 32 vetores
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_bin_bcd.sv:19: $finish called at 32 (1s)
+VCD info: dumpfile waveforms/bcd_7seg.vcd opened for output.
+tb_bcd_7seg passou em 16 vetores
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_bcd_7seg.sv:34: $finish called at 16 (1s)
+VCD info: dumpfile waveforms/display_decimal_2digitos.vcd opened for output.
+tb_display_decimal_2digitos passou em 64 vetores
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_display_decimal_2digitos.sv:44: $finish called at 64 (1s)
+VCD info: dumpfile waveforms/ula_de2_115.vcd opened for output.
+tb_ula_de2_115 PASS checks=16384 unique=8192
+C:\Users\mathe\CIn\projeto-sd-completo\tmp\recompilacao_pacote_fechado\entrega\simulation\tb_ula_de2_115.sv:75: $finish called at 163840000 (1ps)

@@ -1,0 +1,105 @@
+{
+  "name": "somador_subtrator_5bit",
+  "instances": [
+    {
+      "type": "XOR",
+      "name": "xor_sub_0",
+      "connections": {
+        "IN1": "B[0]",
+        "IN2": "SUB",
+        "OUT": "BX[0]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sub_1",
+      "connections": {
+        "IN1": "B[1]",
+        "IN2": "SUB",
+        "OUT": "BX[1]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sub_2",
+      "connections": {
+        "IN1": "B[2]",
+        "IN2": "SUB",
+        "OUT": "BX[2]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sub_3",
+      "connections": {
+        "IN1": "B[3]",
+        "IN2": "SUB",
+        "OUT": "BX[3]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_sub_4",
+      "connections": {
+        "IN1": "B[4]",
+        "IN2": "SUB",
+        "OUT": "BX[4]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_0",
+      "connections": {
+        "A": "A[0]",
+        "B": "BX[0]",
+        "Cin": "SUB",
+        "S": "R[0]",
+        "Cout": "CARRY[1]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_1",
+      "connections": {
+        "A": "A[1]",
+        "B": "BX[1]",
+        "Cin": "CARRY[1]",
+        "S": "R[1]",
+        "Cout": "CARRY[2]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_2",
+      "connections": {
+        "A": "A[2]",
+        "B": "BX[2]",
+        "Cin": "CARRY[2]",
+        "S": "R[2]",
+        "Cout": "CARRY[3]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_3",
+      "connections": {
+        "A": "A[3]",
+        "B": "BX[3]",
+        "Cin": "CARRY[3]",
+        "S": "R[3]",
+        "Cout": "CARRY[4]"
+      }
+    },
+    {
+      "type": "somador_1bit",
+      "name": "fa_4",
+      "connections": {
+        "A": "A[4]",
+        "B": "BX[4]",
+        "Cin": "CARRY[4]",
+        "S": "R[4]",
+        "Cout": "Cout"
+      }
+    }
+  ]
+}

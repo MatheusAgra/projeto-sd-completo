@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "zip": "ULA_DE2_115.zip",
+  "zip_sha256": "1a0f402b5d84c78bcde45c3a4476dc1580bbc17570906a540675626a5ae48a6f",
+  "zip_bytes": 6291316,
+  "manifest_files_verified": 456,
+  "extracted_directory": "C:\\Users\\mathe\\CIn\\projeto-sd-completo\\tmp\\recompilacao_pacote_fechado\\entrega",
+  "native_compilation_errors": 0,
+  "native_compilation_warnings": 36,
+  "simulation_modules_passed": 16,
+  "top_checks": 16384,
+  "top_unique_inputs": 8192,
+  "pins_verified": 96,
+  "extracted_sof_sha256": "3ad9f009d40a417a31a17345ab179e709ecd31b48bc4d6f3c2f99013e346b63b",
+  "delivered_sof_sha256": "42e9b19a48a38a36f0bc3bc9fcd2d7a49ac828c207be5762bab68065b5e14069",
+  "docx_visual_review": "PENDING",
+  "quartus_visual_review": "USER_PENDING",
+  "physical_test": "USER_PENDING",
+  "operation_010_semantics": "PROVISIONAL"
+}

@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/c2_para_sm.vcd opened for output.
+tb_c2_para_sm PASS checks=64 incluindo -32 fora do domínio
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_c2_para_sm.sv:24: $finish called at 64 (1s)

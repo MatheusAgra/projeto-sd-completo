@@ -1,0 +1,109 @@
+{
+  "name": "logica_5bit",
+  "instances": [
+    {
+      "type": "AND2",
+      "name": "and_bit_0",
+      "connections": {
+        "IN1": "A_SM[0]",
+        "IN2": "B_SM[0]",
+        "OUT": "AND6[0]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_bit_0",
+      "connections": {
+        "IN1": "A_SM[0]",
+        "IN2": "B_SM[0]",
+        "OUT": "XOR6[0]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and_bit_1",
+      "connections": {
+        "IN1": "A_SM[1]",
+        "IN2": "B_SM[1]",
+        "OUT": "AND6[1]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_bit_1",
+      "connections": {
+        "IN1": "A_SM[1]",
+        "IN2": "B_SM[1]",
+        "OUT": "XOR6[1]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and_bit_2",
+      "connections": {
+        "IN1": "A_SM[2]",
+        "IN2": "B_SM[2]",
+        "OUT": "AND6[2]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_bit_2",
+      "connections": {
+        "IN1": "A_SM[2]",
+        "IN2": "B_SM[2]",
+        "OUT": "XOR6[2]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and_bit_3",
+      "connections": {
+        "IN1": "A_SM[3]",
+        "IN2": "B_SM[3]",
+        "OUT": "AND6[3]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_bit_3",
+      "connections": {
+        "IN1": "A_SM[3]",
+        "IN2": "B_SM[3]",
+        "OUT": "XOR6[3]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "and_bit_4",
+      "connections": {
+        "IN1": "A_SM[4]",
+        "IN2": "B_SM[4]",
+        "OUT": "AND6[5]"
+      }
+    },
+    {
+      "type": "XOR",
+      "name": "xor_bit_4",
+      "connections": {
+        "IN1": "A_SM[4]",
+        "IN2": "B_SM[4]",
+        "OUT": "XOR6[5]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "align_zero_and",
+      "connections": {
+        "1": "AND6[4]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "align_zero_xor",
+      "connections": {
+        "1": "XOR6[4]"
+      }
+    }
+  ]
+}

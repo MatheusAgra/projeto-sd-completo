@@ -1,0 +1,164 @@
+{
+  "name": "ula_core",
+  "instances": [
+    {
+      "type": "sm_para_c2",
+      "name": "conv_a",
+      "connections": {
+        "SM": "A[4..0]",
+        "C2": "AC2[5..0]"
+      }
+    },
+    {
+      "type": "sm_para_c2",
+      "name": "conv_b",
+      "connections": {
+        "SM": "B[4..0]",
+        "C2": "BC2[5..0]"
+      }
+    },
+    {
+      "type": "modulo2_soma_sub",
+      "name": "aritmetica",
+      "connections": {
+        "A_C2": "AC2[5..0]",
+        "B_C2": "BC2[5..0]",
+        "SUB": "S[0]",
+        "F_SM": "ARIT[5..0]"
+      }
+    },
+    {
+      "type": "negador_c2_6bit",
+      "name": "negacao_b",
+      "connections": {
+        "B_C2": "BC2[5..0]",
+        "NEG": "NEG[5..0]"
+      }
+    },
+    {
+      "type": "comparador_c2_6bit",
+      "name": "comparacao",
+      "connections": {
+        "A_C2": "AC2[5..0]",
+        "B_C2": "BC2[5..0]",
+        "EQ": "EQ",
+        "GT": "GT",
+        "LT": "LT"
+      }
+    },
+    {
+      "type": "logica_5bit",
+      "name": "logica",
+      "connections": {
+        "A_SM": "A[4..0]",
+        "B_SM": "B[4..0]",
+        "AND6": "LAND[5..0]",
+        "XOR6": "LXOR[5..0]"
+      }
+    },
+    {
+      "type": "decodificador_operacao",
+      "name": "controle",
+      "connections": {
+        "S": "S[2..0]",
+        "D": "D[7..0]",
+        "EXIBE_F": "EXIBE_F"
+      }
+    },
+    {
+      "type": "mux_resultado_8x6",
+      "name": "selecao",
+      "connections": {
+        "C0": "ARIT[5..0]",
+        "C1": "ARIT[5..0]",
+        "C2": "NEG[5..0]",
+        "C3": "ZERO[5..0]",
+        "C4": "ZERO[5..0]",
+        "C5": "ZERO[5..0]",
+        "C6": "LAND[5..0]",
+        "C7": "LXOR[5..0]",
+        "D": "D[7..0]",
+        "F": "F[5..0]"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "status_eq",
+      "connections": {
+        "IN1": "D[3]",
+        "IN2": "EQ",
+        "OUT": "EQS"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "status_gt",
+      "connections": {
+        "IN1": "D[4]",
+        "IN2": "GT",
+        "OUT": "GTS"
+      }
+    },
+    {
+      "type": "AND2",
+      "name": "status_lt",
+      "connections": {
+        "IN1": "D[5]",
+        "IN2": "LT",
+        "OUT": "LTS"
+      }
+    },
+    {
+      "type": "OR3",
+      "name": "status_final",
+      "connections": {
+        "IN1": "EQS",
+        "IN2": "GTS",
+        "IN3": "LTS",
+        "OUT": "STATUS"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_0",
+      "connections": {
+        "1": "ZERO[0]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_1",
+      "connections": {
+        "1": "ZERO[1]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_2",
+      "connections": {
+        "1": "ZERO[2]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_3",
+      "connections": {
+        "1": "ZERO[3]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_4",
+      "connections": {
+        "1": "ZERO[4]"
+      }
+    },
+    {
+      "type": "GND",
+      "name": "zero_5",
+      "connections": {
+        "1": "ZERO[5]"
+      }
+    }
+  ]
+}
