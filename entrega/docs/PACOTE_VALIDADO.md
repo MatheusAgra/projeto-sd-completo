@@ -1,3 +1,5 @@
+> Histórico anterior à refatoração visual. O ZIP, manifesto, SOF, relatório, figuras e logs anteriores não representam os BDF atuais. Os novos checks e pendências estão em docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # Validação das fontes do pacote
 
 As fontes finais foram compactadas no candidato `ULA_DE2_115_candidato.zip`, extraídas em pasta nova `tmp/recompilacao_candidato/entrega` e recompiladas nativamente: zero erros e 36 avisos. O verificador repetiu a auditoria das 96 atribuições de pinos e confirmou zero registradores, memória, DSP e PLL. As 66 fontes BDF/BSF/QPF/QSF/Verilog/testbench coincidiram por SHA-256 com a entrega. Consulte `logs/recompile_zip.log` e `auditoria_fontes.json`.

@@ -1,3 +1,9 @@
+## Representação atual
+
+Refatorado com config/layouts, troncos/ramificações físicos e símbolos canônicos coerentes entre BDF e BSF. O auditor geométrico lê o BDF final e compara portas e bits com o grafo/contrato; resultados atuais em docs/REFATORACAO_VISUAL_TECNICA.md e docs/refatoracao_tecnica.json. Regeneração determinística conferida. Análise/exportação Quartus, testes HDL novos e conferência visual pendentes. As verificações nativas descritas abaixo pertencem à revisão anterior.
+
+> Estado da refatoração em 30/09/2026: este registro descreve a revisão ANTERIOR. Os BDF/BSF novos exigem novas exportações e testes. Veja docs/REFATORACAO_VISUAL_TECNICA.md; Quartus/Icarus e conferência visual permanecem pendentes.
+
 # ula_core.bdf
 
 Integra A[4:0] e B[4:0] em sinal e magnitude e S[2:0]. Entrega F[5:0], STATUS e EXIBE_F, sem clock nem memória. Os conversores `conv_a` e `conv_b` produzem AC2/BC2 de seis bits; ambos os códigos de zero SM passam a C2=0.

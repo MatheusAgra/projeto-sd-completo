@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/modulo2_soma_sub.vcd opened for output.
+tb_modulo2_soma_sub PASS checks=1922
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_modulo2_soma_sub.sv:48: $finish called at 1922 (1s)

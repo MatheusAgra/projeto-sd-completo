@@ -1,0 +1,28 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Create Verilog File
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Sep 30 02:03:12 2026
+Info: Command: quartus_map ULA_DE2_115 --convert_bdf_to_verilog=modulos/somador_subtrator_5bit.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file modulos/somador_subtrator_5bit.bdf
+    Info (12023): Found entity 1: somador_subtrator_5bit
+Info (12127): Elaborating entity "" for the top level hierarchy
+Info: Quartus Prime Create Verilog File was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Wed Sep 30 02:03:13 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize

@@ -1,0 +1,5 @@
+Exception: C:\Users\danie\projeto-sd-completo\entrega\scripts\simular_netlist.ps1:11
+Line |
+  11 |  … e 'PASS') { throw 'Compilação dos BDF refatorados ainda pendente; a n …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Compilação dos BDF refatorados ainda pendente; a netlist histórica não valida esta revisão.

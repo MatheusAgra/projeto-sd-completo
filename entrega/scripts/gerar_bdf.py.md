@@ -1,13 +1,11 @@
 # gerar_bdf.py
 
-Gera um BDF real e um BSF a partir de um grafo JSON de instâncias e de um contrato de portas. A entrada é o caminho do grafo, `--interfaces`, `--output` e opcionalmente `--quartus`.
+Emite BDF elétrico e BSF canônico do grafo congelado, contrato de interfaces e config/layouts/<módulo>.json. Posições e conectores são calculados por layout_bdf.py. Não conecta destinos remotos só por nome: troncos, ramificações, barramentos e taps possuem contato geométrico.
 
-Cada conexão é um trecho elétrico que termina na coordenada da porta. Redes de mesmo nome conectam trechos separados no Quartus. Vetores usam `[alto..baixo]` e conectores de barramento. As portas do módulo possuem os mesmos nomes elétricos que suas redes. O desenho distribui os símbolos numa grade com espaçamento calculado pela altura máxima.
+Exemplo: `python entrega/scripts/gerar_bdf.py entrega/config/grafos/somador_1bit.json --interfaces entrega/config/interfaces.json --output tmp/piloto`.
 
-Primitivas usam os símbolos da biblioteca instalada do Quartus; blocos hierárquicos usam as portas do contrato. Os avisos de copyright das primitivas são preservados no BDF. O símbolo não implementa lógica: o corpo elétrico está no BDF.
+--layouts seleciona metadados; --quartus fornece biblioteca alternativa somente se a primitiva não estiver no cache versionado. As 13 primitivas usadas estão preservadas textualmente em config/primitivas, com desenho, portas e avisos legais do baseline. Funciona sem Quartus.
 
-`BUF` é uma operação de ligação do grafo, materializada por dois inversores NOT em série, porque a biblioteca instalada não possui `buf.bsf`. Não cria entidade auxiliar nem HDL oculto. O Quartus pode eliminar esses pares durante a otimização. Nomes de instância recebem sufixos `__inv` e `__out`, com rede intermediária `__buffer_net`.
+Hierarquia usa exatamente o mesmo block_symbol para o BSF entregue e os símbolos embutidos nos BDF. O BSF nativo posterior é conferência de contrato e não substitui essa geometria. BUF continua dois NOT com os nomes e rede intermediária preservados. Símbolos canônicos mantêm o aviso legal Intel de config/simbolos_legal.txt.
 
-Exemplo de execução: `python entrega/scripts/gerar_bdf.py tmp/gerador_probe/somador_1bit.json --interfaces tmp/gerador_probe/interfaces.json --output tmp/gerador_probe`.
-
-A aceitação requer leitura e conversão nativas do Quartus, além de simulação do HDL exportado. O estado efetivamente verificado é registrado em `docs/STATUS_EXECUCAO.md`; a simples execução deste gerador não comprova a função nem a completude do circuito.
+Geração individual não valida o resultado. preparar.py audita os BDF antes de exportar; validar_refatoracao.py também compara regeneração byte a byte e invariantes. Quartus, testes do HDL exportado, compilação e netlist continuam obrigatórios. Conferência visual permanece pendente.

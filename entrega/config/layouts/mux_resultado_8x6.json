@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "module": "mux_resultado_8x6",
+  "instances": {
+    "gate_c0_b0": [
+      0,
+      0
+    ],
+    "gate_c1_b0": [
+      1,
+      0
+    ],
+    "gate_c2_b0": [
+      2,
+      0
+    ],
+    "gate_c3_b0": [
+      3,
+      0
+    ],
+    "gate_c4_b0": [
+      4,
+      0
+    ],
+    "gate_c5_b0": [
+      5,
+      0
+    ],
+    "gate_c6_b0": [
+      6,
+      0
+    ],
+    "gate_c7_b0": [
+      7,
+      0
+    ],
+    "sum_bit_0": [
+      8,
+      0
+    ],
+    "gate_c0_b1": [
+      0,
+      1
+    ],
+    "gate_c1_b1": [
+      1,
+      1
+    ],
+    "gate_c2_b1": [
+      2,
+      1
+    ],
+    "gate_c3_b1": [
+      3,
+      1
+    ],
+    "gate_c4_b1": [
+      4,
+      1
+    ],
+    "gate_c5_b1": [
+      5,
+      1
+    ],
+    "gate_c6_b1": [
+      6,
+      1
+    ],
+    "gate_c7_b1": [
+      7,
+      1
+    ],
+    "sum_bit_1": [
+      8,
+      1
+    ],
+    "gate_c0_b2": [
+      0,
+      2
+    ],
+    "gate_c1_b2": [
+      1,
+      2
+    ],
+    "gate_c2_b2": [
+      2,
+      2
+    ],
+    "gate_c3_b2": [
+      3,
+      2
+    ],
+    "gate_c4_b2": [
+      4,
+      2
+    ],
+    "gate_c5_b2": [
+      5,
+      2
+    ],
+    "gate_c6_b2": [
+      6,
+      2
+    ],
+    "gate_c7_b2": [
+      7,
+      2
+    ],
+    "sum_bit_2": [
+      8,
+      2
+    ],
+    "gate_c0_b3": [
+      0,
+      3
+    ],
+    "gate_c1_b3": [
+      1,
+      3
+    ],
+    "gate_c2_b3": [
+      2,
+      3
+    ],
+    "gate_c3_b3": [
+      3,
+      3
+    ],
+    "gate_c4_b3": [
+      4,
+      3
+    ],
+    "gate_c5_b3": [
+      5,
+      3
+    ],
+    "gate_c6_b3": [
+      6,
+      3
+    ],
+    "gate_c7_b3": [
+      7,
+      3
+    ],
+    "sum_bit_3": [
+      8,
+      3
+    ],
+    "gate_c0_b4": [
+      0,
+      4
+    ],
+    "gate_c1_b4": [
+      1,
+      4
+    ],
+    "gate_c2_b4": [
+      2,
+      4
+    ],
+    "gate_c3_b4": [
+      3,
+      4
+    ],
+    "gate_c4_b4": [
+      4,
+      4
+    ],
+    "gate_c5_b4": [
+      5,
+      4
+    ],
+    "gate_c6_b4": [
+      6,
+      4
+    ],
+    "gate_c7_b4": [
+      7,
+      4
+    ],
+    "sum_bit_4": [
+      8,
+      4
+    ],
+    "gate_c0_b5": [
+      0,
+      5
+    ],
+    "gate_c1_b5": [
+      1,
+      5
+    ],
+    "gate_c2_b5": [
+      2,
+      5
+    ],
+    "gate_c3_b5": [
+      3,
+      5
+    ],
+    "gate_c4_b5": [
+      4,
+      5
+    ],
+    "gate_c5_b5": [
+      5,
+      5
+    ],
+    "gate_c6_b5": [
+      6,
+      5
+    ],
+    "gate_c7_b5": [
+      7,
+      5
+    ],
+    "sum_bit_5": [
+      8,
+      5
+    ]
+  },
+  "notes": "A matriz de AND está organizada em seis faixas de bit de saída e oito colunas de candidato: `gate_cN_bi` fica na coluna N, faixa i. A OR8 `sum_bit_i` fica depois da matriz na coluna 8, na mesma faixa i, e agrega os oito P_N_i para F[i]. D[N] distribui-se verticalmente às seis portas AND do candidato N; C[N][i] chega à célula da interseção candidato/bit. Esse fan-out de D e as oito entradas por OR8 exigem corredores e junções físicos claros no roteador."
+}

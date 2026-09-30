@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "module": "sm_para_c2",
+  "instances": {
+    "xor_sinal_0": [0, 0],
+    "xor_sinal_1": [0, 1],
+    "xor_sinal_2": [0, 2],
+    "xor_sinal_3": [0, 3],
+    "xor_sinal_4": [0, 4],
+    "xor_sinal_5": [0, 5],
+    "fa_0": [2, 0],
+    "fa_1": [2, 1],
+    "fa_2": [2, 2],
+    "fa_3": [2, 3],
+    "fa_4": [2, 4],
+    "fa_5": [2, 5],
+    "gnd": [0, 7]
+  },
+  "notes": [
+    "Organização em seis faixas correspondentes aos bits 0..5: cada xor_sinal_i fica alinhado com fa_i.",
+    "SM[4] é distribuído fisicamente aos seis XOR e ao Cin inicial de fa_0; também segue às entradas de XOR previstas no grafo, preservando os zeros de magnitude em SM[4] XOR GND.",
+    "Cada X[i] liga ao A de fa_i; GND alimenta as seis entradas B; fa_i.S liga a C2[i].",
+    "A cadeia de carry percorre fa_0.Cout -> fa_1.Cin até fa_4.Cout -> fa_5.Cin; o carry final de fa_5 chega à rede Cout, sem porta de saída contratual nem consumidor.",
+    "A instância gnd compartilha GND entre XOR de bits 4/5, operandos B das seis etapas e as portas necessárias. O fan-out deve ser uma árvore elétrica contínua.",
+    "Preservar a ordem indexada e a largura: os bits 0..3 derivam de SM[0..3], enquanto X[4] e X[5] derivam de GND XOR SM[4]."
+  ]
+}

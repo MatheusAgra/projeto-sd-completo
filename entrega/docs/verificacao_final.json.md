@@ -1,3 +1,3 @@
-# verificacao_final.json
+# Verificação final atual
 
-Resumo real de verificar_entrega.py: numero de modulos, pinos/I/O conferidos com Fitter, zero recursos de estado/memoria/DSP e hash SHA-256 do SOF. E gerado somente apos os asserts passarem. A verificacao nao confirma jumpers, conferencia grafica ou teste fisico.
+Estado PENDING_NATIVE da revisão refatorada. Pinagem conferida no QSF/CSV; recursos/Fitter/SOF não foram recompilados. O PASS anterior está preservado em historico_pre_refatoracao/verificacao_final.json. Somente verificar_entrega.py com proveniência nativa nova pode aprovar o estado atual.

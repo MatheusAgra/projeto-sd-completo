@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\danie\projeto-sd-completo\entrega\scripts\validar_nativo.py", line 70, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\danie\projeto-sd-completo\entrega\scripts\validar_nativo.py", line 31, in main
+    raise FileNotFoundError('Etapas nativas n�o executadas; ferramentas ausentes: ' + ', '.join(missing))
+FileNotFoundError: Etapas nativas n�o executadas; ferramentas ausentes: C:\intelFPGA_lite\21.1\quartus\bin64\quartus_map.exe, C:\intelFPGA_lite\21.1\quartus\bin64\quartus_sh.exe, C:\intelFPGA_lite\21.1\quartus\bin64\quartus_eda.exe, C:\Users\danie\projeto-sd-completo\tmp\tools\iverilog\iverilog.exe, C:\Users\danie\projeto-sd-completo\tmp\tools\iverilog\vvp.exe

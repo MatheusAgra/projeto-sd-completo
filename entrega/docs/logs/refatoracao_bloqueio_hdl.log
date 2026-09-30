@@ -1,0 +1,5 @@
+Exception: C:\Users\danie\projeto-sd-completo\entrega\scripts\simular.ps1:15
+Line |
+  15 |  … e 'PASS') { throw 'HDL atual ainda não exportado dos BDF refatorados; …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | HDL atual ainda não exportado dos BDF refatorados; testes sobre HDL histórico não aprovam esta revisão.

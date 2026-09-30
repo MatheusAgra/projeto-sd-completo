@@ -1,0 +1,2582 @@
+{
+  "status": "PASS_GEOMETRY_PENDING_NATIVE",
+  "order": [
+    "somador_1bit",
+    "somador_subtrator_5bit",
+    "modulo2_soma_sub"
+  ],
+  "modules": [
+    {
+      "module": "somador_1bit",
+      "consumed": 12,
+      "reachable": 12,
+      "disconnected": [],
+      "shorts": [],
+      "width_errors": [],
+      "collisions": [],
+      "unjoined_crossings": [
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            128
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            912,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            912,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            912,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            128
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1896,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2600,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2600,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2600,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2600,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2600,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2624,
+            544
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2624,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2624,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2648,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2648,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3592,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3616,
+            1296
+          ]
+        }
+      ],
+      "native_semantics_pending": true,
+      "missing_drivers": [],
+      "intentional_unused": [],
+      "errors": [],
+      "label_mismatches": [],
+      "geometry": {
+        "segments": 60,
+        "junctions": 20,
+        "symbols": 5,
+        "pins": 5
+      }
+    },
+    {
+      "module": "somador_subtrator_5bit",
+      "consumed": 31,
+      "reachable": 31,
+      "disconnected": [],
+      "shorts": [],
+      "width_errors": [],
+      "collisions": [],
+      "unjoined_crossings": [
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            536,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            560,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            584,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            608,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            632,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            632,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            632,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            632,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            656,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            656,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            656,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            680,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            704,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            3584
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            728,
+            3616
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            776,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            800,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            824,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            736
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            3584
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            3616
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            848,
+            3648
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1224,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1248,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1272,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            3584
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            3616
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            3648
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1592,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1616,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2816
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            1984
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1688,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1712,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1712,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            1152
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1736,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1760,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1760,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1808,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1808,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1808,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1808,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1992,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1992,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1992,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1992,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2016,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2016,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2040,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2040,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2064,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2064,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2088,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2792,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2792,
+            3584
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2792,
+            3616
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2792,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2816,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2840,
+            3680
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2864,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2864,
+            2752
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2864,
+            2784
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2864,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2864,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2888,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2888,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2912,
+            2848
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2912,
+            2880
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2936,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2936,
+            1920
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2936,
+            1952
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2936,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2936,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2960,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2960,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2984,
+            2016
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2984,
+            2048
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            320
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            768
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            1088
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            1120
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3008,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3032,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3032,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3056,
+            1184
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3056,
+            1216
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3104,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3104,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3104,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3128,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3128,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3128,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3560,
+            288
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            3584,
+            288
+          ]
+        }
+      ],
+      "native_semantics_pending": true,
+      "missing_drivers": [],
+      "intentional_unused": [],
+      "errors": [],
+      "label_mismatches": [],
+      "geometry": {
+        "segments": 180,
+        "junctions": 75,
+        "symbols": 10,
+        "pins": 5
+      }
+    },
+    {
+      "module": "modulo2_soma_sub",
+      "consumed": 25,
+      "reachable": 25,
+      "disconnected": [],
+      "shorts": [],
+      "width_errors": [],
+      "collisions": [],
+      "unjoined_crossings": [
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            128
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            864,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            888,
+            256
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1640,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            160
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            1664,
+            224
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2120,
+            192
+          ]
+        },
+        {
+          "kind": "crossing_without_junction",
+          "coordinate": [
+            2120,
+            224
+          ]
+        }
+      ],
+      "native_semantics_pending": true,
+      "missing_drivers": [],
+      "intentional_unused": [
+        {
+          "signal": "COUT",
+          "driver": "soma_sub.Cout"
+        }
+      ],
+      "errors": [],
+      "label_mismatches": [],
+      "geometry": {
+        "segments": 33,
+        "junctions": 11,
+        "symbols": 2,
+        "pins": 4
+      }
+    }
+  ],
+  "native": "PENDING",
+  "visual": "PENDING"
+}

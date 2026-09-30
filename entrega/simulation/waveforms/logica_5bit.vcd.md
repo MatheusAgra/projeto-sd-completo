@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # logica_5bit.vcd
 
 Waveform VCD real da execução Icarus 13.0 do testbench `tb_logica_5bit.sv` contra a exportação Quartus do BDF final. Contém os sinais de entrada e as saídas AND/XOR alinhadas em seis bits para os 1024 pares.

@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "module": "ula_de2_115",
+  "instances": {
+    "mag_a_0": [
+      0,
+      0
+    ],
+    "mag_b_0": [
+      0,
+      1
+    ],
+    "mag_a_1": [
+      0,
+      2
+    ],
+    "mag_b_1": [
+      0,
+      3
+    ],
+    "mag_a_2": [
+      0,
+      4
+    ],
+    "mag_b_2": [
+      0,
+      5
+    ],
+    "mag_a_3": [
+      0,
+      6
+    ],
+    "mag_b_3": [
+      0,
+      7
+    ],
+    "zero_MAGA": [
+      0,
+      8
+    ],
+    "zero_MAGB": [
+      0,
+      9
+    ],
+    "mirror_0": [
+      0,
+      10
+    ],
+    "mirror_1": [
+      0,
+      11
+    ],
+    "mirror_2": [
+      0,
+      12
+    ],
+    "mirror_3": [
+      0,
+      13
+    ],
+    "mirror_4": [
+      0,
+      14
+    ],
+    "mirror_5": [
+      0,
+      15
+    ],
+    "mirror_6": [
+      0,
+      16
+    ],
+    "mirror_7": [
+      0,
+      17
+    ],
+    "mirror_8": [
+      0,
+      18
+    ],
+    "mirror_9": [
+      0,
+      19
+    ],
+    "mirror_10": [
+      0,
+      20
+    ],
+    "mirror_11": [
+      0,
+      21
+    ],
+    "mirror_12": [
+      0,
+      22
+    ],
+    "ula": [
+      1,
+      0
+    ],
+    "habilitacao_entradas": [
+      1,
+      1
+    ],
+    "display_a": [
+      2,
+      0
+    ],
+    "display_b": [
+      2,
+      1
+    ],
+    "display_f": [
+      2,
+      2
+    ],
+    "ledg_0": [
+      3,
+      0
+    ],
+    "ledg_1": [
+      3,
+      1
+    ],
+    "ledg_2": [
+      3,
+      2
+    ],
+    "ledg_3": [
+      3,
+      3
+    ],
+    "ledg_4": [
+      3,
+      4
+    ],
+    "ledg_5": [
+      3,
+      5
+    ],
+    "ledg_6": [
+      3,
+      6
+    ],
+    "ledg_off_7": [
+      3,
+      7
+    ],
+    "ledg_off_8": [
+      3,
+      8
+    ],
+    "ledr_off_13": [
+      3,
+      9
+    ],
+    "ledr_off_14": [
+      3,
+      10
+    ],
+    "ledr_off_15": [
+      3,
+      11
+    ],
+    "ledr_off_16": [
+      3,
+      12
+    ],
+    "ledr_off_17": [
+      3,
+      13
+    ],
+    "hex_off_6_0": [
+      4,
+      0
+    ],
+    "hex_off_6_1": [
+      4,
+      1
+    ],
+    "hex_off_6_2": [
+      4,
+      2
+    ],
+    "hex_off_6_3": [
+      4,
+      3
+    ],
+    "hex_off_6_4": [
+      4,
+      4
+    ],
+    "hex_off_6_5": [
+      4,
+      5
+    ],
+    "hex_off_6_6": [
+      4,
+      6
+    ],
+    "hex_off_7_0": [
+      4,
+      7
+    ],
+    "hex_off_7_1": [
+      4,
+      8
+    ],
+    "hex_off_7_2": [
+      4,
+      9
+    ],
+    "hex_off_7_3": [
+      4,
+      10
+    ],
+    "hex_off_7_4": [
+      4,
+      11
+    ],
+    "hex_off_7_5": [
+      4,
+      12
+    ],
+    "hex_off_7_6": [
+      4,
+      13
+    ]
+  },
+  "notes": [
+    "SW alimenta ula pelos slices externos originais A=SW[4..0], B=SW[9..5], S=SW[12..10]; manter os índices e a ordem exata dos bits.",
+    "Buffers mag_a_* e mag_b_* formam MAGA/MAGB de quatro bits e os GND fixam o bit 4 de cada magnitude; distribuir MAGA/MAGB aos displays correspondentes.",
+    "Os 13 espelhos mirror_* levam SW[0..12] a LEDR[0..12]; LEDR[13..17] têm GND individuais.",
+    "display_a, display_b e display_f ficam como canais independentes; ONE habilita os displays de operandos e EXIBE_F habilita o resultado.",
+    "LEDG[0..5] espelha F[0..5], LEDG[6] recebe STATUS e LEDG[7..8] são fixados em GND; HEX6/HEX7 ficam desativados pelos VCC existentes."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "module": "decodificador_operacao",
+  "instances": {
+    "not_s_0": [
+      0,
+      0
+    ],
+    "not_s_1": [
+      0,
+      1
+    ],
+    "not_s_2": [
+      0,
+      2
+    ],
+    "decode_0": [
+      2,
+      0
+    ],
+    "decode_1": [
+      2,
+      1
+    ],
+    "decode_2": [
+      2,
+      2
+    ],
+    "decode_3": [
+      2,
+      3
+    ],
+    "decode_4": [
+      2,
+      4
+    ],
+    "decode_5": [
+      2,
+      5
+    ],
+    "decode_6": [
+      2,
+      6
+    ],
+    "decode_7": [
+      2,
+      7
+    ],
+    "show_f": [
+      3,
+      0
+    ]
+  },
+  "notes": "As três inversões de S ocupam a primeira coluna. Os oito mintermos permanecem em ordem por índice D[0] a D[7], em oito faixas; `show_f` fica separado como saída de habilitação. Cada bit de S e cada NS correspondente tem fan-out entre vários mintermos, e NS_2/NS_1 também alimentam EXIBE_F."
+}

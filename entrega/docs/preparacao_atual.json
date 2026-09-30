@@ -1,0 +1,69 @@
+{
+  "modules": {
+    "somador_1bit": {
+      "bdf_sha256": "7764d39f107aeff58fec7dfe29ff61417d1786cd0541c47aa5f017e19939a2ea",
+      "native": "PENDING"
+    },
+    "sm_para_c2": {
+      "bdf_sha256": "a91189adbaed165401eef0a92aa1ea73e9aac7798b9474e44a6a392a4db23f0a",
+      "native": "PENDING"
+    },
+    "somador_subtrator_6bit": {
+      "bdf_sha256": "d8bcfdb8ce4ca7add7533796fd4d6830fcaf02e3b6b606b34e67b944cb4744c5",
+      "native": "PENDING"
+    },
+    "c2_para_sm": {
+      "bdf_sha256": "e12b783d88e339654a08ebaa45e7955c6f12fe06956b36312b6260e23d1c53e5",
+      "native": "PENDING"
+    },
+    "negador_c2_6bit": {
+      "bdf_sha256": "3e2509b256e34eac9f530703b512d0043589a568e9bde3590bebb8d7a8d5b3c2",
+      "native": "PENDING"
+    },
+    "modulo2_soma_sub": {
+      "bdf_sha256": "cd0a7562beef6adbca17e0a0465a9710a29f06413de97e9b4b5cc4272105b792",
+      "native": "PENDING"
+    },
+    "comparador_c2_6bit": {
+      "bdf_sha256": "34055b667fe51f1d80a19839eff36fcb67c0ae645e00a3817b80ec23bc7886f9",
+      "native": "PENDING"
+    },
+    "logica_5bit": {
+      "bdf_sha256": "00ca0229c91fbe980ae32913627115b09f493f883af12c5f39cb4c9b9a7d761d",
+      "native": "PENDING"
+    },
+    "decodificador_operacao": {
+      "bdf_sha256": "d7774c2883a38268733ddcaab604cbbdf7fa7dcaf99b31ac2670431ad87bb75e",
+      "native": "PENDING"
+    },
+    "mux_resultado_8x6": {
+      "bdf_sha256": "e5bc46b8398df296f241049c1bf3c313ed047517085bc07f8ddaa30d95b60d9e",
+      "native": "PENDING"
+    },
+    "ula_core": {
+      "bdf_sha256": "1d72473cc1fe4377620bcac6d3440345ade3b0ea825f5dfd1e68e3ecf8bb56c1",
+      "native": "PENDING"
+    },
+    "somador_subtrator_5bit": {
+      "bdf_sha256": "ce4cdf1927a4d6518a8286ed3e6c16d79f155ba91031b2f04e034c9ffd4ad822",
+      "native": "PENDING"
+    },
+    "bin_bcd": {
+      "bdf_sha256": "484304695c1faa5fee31a7ba08d5a4e9bdac58b3d6ba28d040c897eb11391353",
+      "native": "PENDING"
+    },
+    "bcd_7seg": {
+      "bdf_sha256": "5850463d5841c7a4372ac6ee0511b9686eadfbb4802f1fd361d9c4ae560cd82f",
+      "native": "PENDING"
+    },
+    "display_decimal_2digitos": {
+      "bdf_sha256": "3bd3439fee5d90d081b3c64439929ddf317f251ef130d4b5b9024a73c271acad",
+      "native": "PENDING"
+    },
+    "ula_de2_115": {
+      "bdf_sha256": "5bace5b5eebff23304458d8bc9a6572c205469f8c9221a50a9e24a75d78d29eb",
+      "native": "PENDING"
+    }
+  },
+  "status": "PENDING_NATIVE"
+}

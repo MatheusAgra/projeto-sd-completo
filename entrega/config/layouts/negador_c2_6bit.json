@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "module": "negador_c2_6bit",
+  "instances": {
+    "invert_0": [0, 0],
+    "invert_1": [0, 1],
+    "invert_2": [0, 2],
+    "invert_3": [0, 3],
+    "invert_4": [0, 4],
+    "invert_5": [0, 5],
+    "fa_0": [2, 0],
+    "fa_1": [2, 1],
+    "fa_2": [2, 2],
+    "fa_3": [2, 3],
+    "fa_4": [2, 4],
+    "fa_5": [2, 5],
+    "gnd": [0, 7],
+    "vcc": [0, 8]
+  },
+  "notes": [
+    "Faixas 0..5 agrupam invert_i e fa_i pelo bit. B_C2[i] liga a invert_i e NOT_B[i] segue ao pino A do fa_i correspondente.",
+    "GND alimenta os seis pinos B dos somadores. VCC alimenta Cin inicial de fa_0.",
+    "Cadeia contínua de carry: fa_0.Cout -> fa_1.Cin -> fa_2.Cin -> fa_3.Cin -> fa_4.Cin -> fa_5.Cin. Cada fa_i.S dirige NEG[i].",
+    "fa_5.Cout está ligado à rede COUT interna, mas não há porta COUT na interface nem consumidor. O carry é descartado funcionalmente; não inventar saída.",
+    "Preservar operação módulo 64, a ordem de bits 0..5 e os vetores de seis bits. Fan-out de GND é compartilhado e requer caminho elétrico físico."
+  ]
+}

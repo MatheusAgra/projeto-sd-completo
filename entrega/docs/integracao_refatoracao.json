@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "core_top_graphs_byte_identical": true,
+  "qsf_qpf_byte_identical": true,
+  "layout_files_unchanged": 32,
+  "native_execution": false,
+  "probe": "tmp/integracao_085c10405c254e61a112ae9fa69ccc01/entrega",
+  "correction": "integrar.py preserva LAST_QUARTUS_VERSION e evita reescrever arquivos já equivalentes."
+}

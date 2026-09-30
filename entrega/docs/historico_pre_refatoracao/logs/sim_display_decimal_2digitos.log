@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/display_decimal_2digitos.vcd opened for output.
+tb_display_decimal_2digitos passou em 64 vetores
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_display_decimal_2digitos.sv:44: $finish called at 64 (1s)

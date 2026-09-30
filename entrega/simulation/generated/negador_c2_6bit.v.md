@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # negador_c2_6bit.v
 
 HDL exportado nativamente do BDF `negador_c2_6bit.bdf` pelo Quartus 21.1. Usado apenas para simulacao e geracao do BSF; nao consta como fonte no QSF. Portas conferidas automaticamente contra `interfaces.json`. Implementacao estrutural derivada dos conectores reais.

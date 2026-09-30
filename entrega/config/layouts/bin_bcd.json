@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "module": "bin_bcd",
+  "instances": {
+    "or10_mid": [
+      0,
+      0
+    ],
+    "or20_mid": [
+      0,
+      1
+    ],
+    "and10_hi": [
+      1,
+      0
+    ],
+    "or10": [
+      1,
+      1
+    ],
+    "and20": [
+      1,
+      2
+    ],
+    "and30": [
+      1,
+      3
+    ],
+    "not20": [
+      2,
+      0
+    ],
+    "and_dez0_a": [
+      2,
+      1
+    ],
+    "or_dez0": [
+      2,
+      2
+    ],
+    "buf_dez0": [
+      2,
+      3
+    ],
+    "buf_dez1": [
+      2,
+      4
+    ],
+    "dez2_zero": [
+      2,
+      5
+    ],
+    "dez3_zero": [
+      2,
+      6
+    ],
+    "sub_enable": [
+      2,
+      7
+    ],
+    "k0_zero": [
+      2,
+      8
+    ],
+    "correction_bit_4": [
+      2,
+      9
+    ],
+    "correction_bit_3": [
+      2,
+      10
+    ],
+    "correction_bit_2": [
+      2,
+      11
+    ],
+    "correction_bit_1": [
+      2,
+      12
+    ],
+    "subtract_tens": [
+      3,
+      0
+    ],
+    "unit_bit_0": [
+      4,
+      0
+    ],
+    "unit_bit_1": [
+      4,
+      1
+    ],
+    "unit_bit_2": [
+      4,
+      2
+    ],
+    "unit_bit_3": [
+      4,
+      3
+    ]
+  },
+  "notes": [
+    "Colunas organizam a classificação do valor MAG, a lógica de correção das dezenas, a subtração do valor corretivo e as saídas UNI.",
+    "Os sinais T20 e DEZ0_INTERNAL alimentam tanto a formação de DEZ quanto derivações do barramento K; manter seus fan-outs como redes contínuas.",
+    "K[0] é fixado em GND e SUB_ONE em VCC; K[1..4] são derivados conforme o grafo, sem reordenar bits.",
+    "COUT_UNUSED é uma saída intencionalmente sem consumidor; preservar seu terminal e registrá-lo como tal."
+  ]
+}

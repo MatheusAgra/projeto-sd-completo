@@ -5,10 +5,18 @@ param(
 $ErrorActionPreference = 'Stop'
 $DeliveryRoot = Split-Path -Parent $PSScriptRoot
 $WorkspaceRoot = Split-Path -Parent $DeliveryRoot
+$CurrentPath = Join-Path $DeliveryRoot 'docs/validacao_nativa_atual.json'
+if (-not (Test-Path -LiteralPath $CurrentPath)) { throw 'Compilação atual não registrada; execute scripts/validar_nativo.py.' }
+$Current = Get-Content -LiteralPath $CurrentPath -Raw | ConvertFrom-Json
+if ($Current.stages.compilation.status -ne 'PASS') { throw 'Compilação dos BDF refatorados ainda pendente; a netlist histórica não valida esta revisão.' }
+foreach ($Property in $Current.sources.PSObject.Properties) {
+    $SourcePath = Join-Path $DeliveryRoot $Property.Name
+    if ((Get-FileHash -LiteralPath $SourcePath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $Property.Value) { throw ('Fonte alterada após compilação: ' + $Property.Name) }
+}
 if (-not $IcarusRoot) { $IcarusRoot = Join-Path $WorkspaceRoot 'tmp/tools/iverilog' }
-$BinRoot = Join-Path $IcarusRoot 'ucrt64/bin'
+$BinRoot = if (Test-Path -LiteralPath (Join-Path $IcarusRoot 'ucrt64/bin/iverilog.exe')) { Join-Path $IcarusRoot 'ucrt64/bin' } else { $IcarusRoot }
 $env:PATH = $BinRoot + ';' + $env:PATH
-$env:IVL_ROOT = Join-Path $IcarusRoot 'ucrt64/lib/ivl'
+$env:IVL_ROOT = if (Test-Path -LiteralPath (Join-Path $IcarusRoot 'ucrt64/lib/ivl')) { Join-Path $IcarusRoot 'ucrt64/lib/ivl' } else { Join-Path (Split-Path -Parent $BinRoot) 'lib/ivl' }
 $LogsRoot = Join-Path $DeliveryRoot 'docs/logs'
 $NetlistRoot = Join-Path $DeliveryRoot 'simulation/netlist'
 $RunRoot = Join-Path $WorkspaceRoot 'tmp/netlist_run'

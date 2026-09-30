@@ -1,3 +1,3 @@
 # validar_estrutura.py
 
-Confere os 16 grafos: entidade e fonte presentes, nomes de instância únicos, aridade/direção/largura de portas, drivers únicos em cada rede consumida e ausência de ciclos combinacionais e hierárquicos. Expande bus ou bit para redes individuais; BUF é conexão lógica que o emissor materializa em dois NOT. Exemplo: python scripts/validar_estrutura.py. Passou nos 16 módulos e 342 instâncias; não substitui análise Quartus nem simulação do BDF exportado.
+Confere os 16 grafos: nomes, portas, larguras, drivers e ciclos. Usa os símbolos de primitivas preservados em config/primitivas, permitindo validação sem Quartus instalado. Não prova continuidade geométrica: essa prova fica em validar_geometria.py, que lê os BDF finais por contato físico. BUF conserva a expansão em dois NOT. Resultados atuais e pendências em docs/REFATORACAO_VISUAL_TECNICA.md.

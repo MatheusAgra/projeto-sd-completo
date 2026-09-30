@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # ula_de2_115.vo
 
 Netlist funcional de tecnologia Cyclone IV E gerada pelo EDA Netlist Writer do Quartus 21.1 após a compilação dos BDF finais. É uma representação adicional da implementação mapeada e não é cadastrada no QSF. Interface: SW13, LEDR18, LEDG9 e oito HEX7, conforme o topo.

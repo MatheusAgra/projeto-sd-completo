@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "module": "logica_5bit",
+  "instances": {
+    "and_bit_0": [
+      2,
+      0
+    ],
+    "xor_bit_0": [
+      3,
+      0
+    ],
+    "and_bit_1": [
+      2,
+      1
+    ],
+    "xor_bit_1": [
+      3,
+      1
+    ],
+    "and_bit_2": [
+      2,
+      2
+    ],
+    "xor_bit_2": [
+      3,
+      2
+    ],
+    "and_bit_3": [
+      2,
+      3
+    ],
+    "xor_bit_3": [
+      3,
+      3
+    ],
+    "and_bit_4": [
+      2,
+      4
+    ],
+    "xor_bit_4": [
+      3,
+      4
+    ],
+    "align_zero_and": [
+      4,
+      0
+    ],
+    "align_zero_xor": [
+      4,
+      1
+    ]
+  },
+  "notes": "Cada faixa `i` reúne `and_bit_i` e `xor_bit_i` para o mesmo bit de A_SM/B_SM. A faixa 4 corresponde ao bit de sinal e escreve em AND6[5]/XOR6[5]; AND6[4] e XOR6[4] permanecem ligados às instâncias GND de alinhamento. A e B têm fan-out para as duas primitivas de cada bit."
+}

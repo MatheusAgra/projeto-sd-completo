@@ -7,6 +7,7 @@ from pathlib import Path
 from preparar import symbol_ports
 from validar_estrutura import check
 from empacotar import included_files
+from validar_nativo import source_hashes
 
 
 def main():
@@ -16,6 +17,30 @@ def main():
     args = parser.parse_args()
     root = args.root.resolve()
     interfaces = json.loads((root / 'config/interfaces.json').read_text(encoding='utf-8'))
+    provenance_path = root / 'docs/preparacao_atual.json'
+    if not provenance_path.is_file():
+        raise ValueError('Falta proveniência atual dos BDF/HDL: execute preparar.py e a validação nativa')
+    provenance = json.loads(provenance_path.read_text(encoding='utf-8'))
+    if provenance.get('status') != 'PASS' or set(provenance['modules']) != set(interfaces):
+        raise ValueError('Validação nativa dos BDF atuais pendente; logs/HDL anteriores não aprovam esta revisão')
+    for name in interfaces:
+        entry = provenance['modules'][name]
+        for suffix, directory, field in [('.bdf', 'modulos', 'bdf_sha256'), ('.v', 'simulation/generated', 'verilog_sha256')]:
+            actual_hash = hashlib.sha256((root / directory / (name + suffix)).read_bytes()).hexdigest()
+            if actual_hash != entry[field]:
+                raise ValueError(f'Proveniência divergente: {name}{suffix}')
+    native_path = root / 'docs/validacao_nativa_atual.json'
+    if not native_path.is_file():
+        raise ValueError('Falta validação nativa atual: execute validar_nativo.py')
+    native = json.loads(native_path.read_text(encoding='utf-8'))
+    if native.get('status') != 'PASS' or native.get('sources') != source_hashes(root):
+        raise ValueError('Compilação/simulações atuais pendentes ou fontes alteradas')
+    if set(native.get('stages', {})) != {'offline', 'export', 'simulation', 'compilation', 'netlist'}:
+        raise ValueError('Cobertura nativa incompleta')
+    for stage in native['stages'].values():
+        log_path = root / stage['log']
+        if stage['status'] != 'PASS' or not log_path.is_file() or hashlib.sha256(log_path.read_bytes()).hexdigest() != stage['sha256']:
+            raise ValueError('Evidência nativa divergente')
     check(root, Path('C:/intelFPGA_lite/21.1/quartus'))
     qsf = (root / 'ULA_DE2_115.qsf').read_text(encoding='utf-8')
     sources = re.findall(r'^set_global_assignment -name BDF_FILE (.+)$', qsf, flags=re.M)
@@ -63,10 +88,10 @@ def main():
     if not sof.is_file() or sof.stat().st_size == 0:
         raise ValueError('SOF ausente')
     result = {'status':'PASS', 'modules':16, 'pins_verified':len(pins), 'sequential_registers':0, 'memory_bits':0, 'dsp_elements':0, 'sof_sha256':hashlib.sha256(sof.read_bytes()).hexdigest()}
-    (root / 'docs/verificacao_final.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
+    (root / 'docs/verificacao_final.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8', newline='\n')
     if args.manifest:
         files = {p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in included_files(root) if p.name != 'manifest.json'}
-        (root / 'manifest.json').write_text(json.dumps({'hash_algorithm':'SHA-256', 'files':files}, indent=2) + '\n', encoding='utf-8')
+        (root / 'manifest.json').write_text(json.dumps({'hash_algorithm':'SHA-256', 'files':files}, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps(result, indent=2))
 
 

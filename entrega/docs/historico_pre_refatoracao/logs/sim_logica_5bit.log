@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/logica_5bit.vcd opened for output.
+PASS logica_5bit: 1024 pares
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_logica_5bit.sv:27: $finish called at 1024 (1s)

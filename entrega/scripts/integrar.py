@@ -13,7 +13,16 @@ def instance(kind, name, **connections):
 def save(name, instances):
     path = ROOT / 'config' / 'grafos' / (name + '.json')
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({'name': name, 'instances': instances}, indent=2) + '\n', encoding='utf-8')
+    graph = {'name': name, 'instances': instances}
+    if path.is_file() and json.loads(path.read_text(encoding='utf-8')) == graph:
+        return
+    path.write_text(json.dumps(graph, indent=2) + '\n', encoding='utf-8', newline='\n')
+
+
+def save_text(path, content):
+    if path.is_file() and path.read_text(encoding='utf-8').splitlines() == content.splitlines():
+        return
+    path.write_text(content, encoding='utf-8', newline='\n')
 
 
 def main():
@@ -62,8 +71,13 @@ def main():
     qsf += [f'set_global_assignment -name BDF_FILE modulos/{name}.bdf' for name in interfaces]
     for row in pins:
         qsf += [f'set_location_assignment PIN_{row["pino"]} -to {row["sinal"]}', f'set_instance_assignment -name IO_STANDARD "{row["padrao_io"]}" -to {row["sinal"]}']
-    (ROOT / 'ULA_DE2_115.qsf').write_text('\n'.join(qsf) + '\n', encoding='utf-8')
-    (ROOT / 'ULA_DE2_115.qpf').write_text('QUARTUS_VERSION = "21.1"\nPROJECT_REVISION = "ULA_DE2_115"\n', encoding='utf-8')
+    qsf_path = ROOT / 'ULA_DE2_115.qsf'
+    if qsf_path.is_file():
+        metadata = [line for line in qsf_path.read_text(encoding='utf-8').splitlines() if line.startswith('set_global_assignment -name LAST_QUARTUS_VERSION ')]
+        if metadata:
+            qsf += [''] + metadata
+    save_text(qsf_path, '\n'.join(qsf) + '\n')
+    save_text(ROOT / 'ULA_DE2_115.qpf', 'QUARTUS_VERSION = "21.1"\nPROJECT_REVISION = "ULA_DE2_115"\n')
 
 
 if __name__ == '__main__':

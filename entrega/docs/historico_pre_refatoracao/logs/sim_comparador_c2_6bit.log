@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/comparador_c2_6bit.vcd opened for output.
+PASS comparador_c2_6bit: 4096 pares signed C2
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_comparador_c2_6bit.sv:29: $finish called at 4096 (1s)

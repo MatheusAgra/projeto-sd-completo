@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "module": "comparador_c2_6bit",
+  "instances": {
+    "eq_bit_0": [
+      1,
+      0
+    ],
+    "eq_bit_1": [
+      1,
+      1
+    ],
+    "eq_bit_2": [
+      1,
+      2
+    ],
+    "eq_bit_3": [
+      1,
+      3
+    ],
+    "eq_bit_4": [
+      1,
+      4
+    ],
+    "eq_bit_5": [
+      1,
+      5
+    ],
+    "not_a_sign": [
+      0,
+      0
+    ],
+    "not_b_sign": [
+      0,
+      1
+    ],
+    "not_a_0": [
+      0,
+      2
+    ],
+    "not_a_1": [
+      0,
+      3
+    ],
+    "not_a_2": [
+      0,
+      4
+    ],
+    "not_a_3": [
+      0,
+      5
+    ],
+    "not_a_4": [
+      0,
+      6
+    ],
+    "eq_all": [
+      7,
+      0
+    ],
+    "equal_prefix_2": [
+      2,
+      2
+    ],
+    "equal_prefix_1": [
+      2,
+      1
+    ],
+    "equal_prefix_0": [
+      2,
+      0
+    ],
+    "unsigned_lt_4": [
+      3,
+      4
+    ],
+    "unsigned_lt_3": [
+      3,
+      3
+    ],
+    "unsigned_lt_2": [
+      3,
+      2
+    ],
+    "unsigned_lt_1": [
+      3,
+      1
+    ],
+    "unsigned_lt_0": [
+      3,
+      0
+    ],
+    "unsigned_lt_low": [
+      4,
+      3
+    ],
+    "unsigned_lt_high": [
+      4,
+      1
+    ],
+    "unsigned_lt": [
+      5,
+      2
+    ],
+    "negative_a_lt": [
+      5,
+      0
+    ],
+    "positive_lt": [
+      5,
+      1
+    ],
+    "negative_both": [
+      5,
+      3
+    ],
+    "negative_unsigned_lt": [
+      6,
+      3
+    ],
+    "signed_lt": [
+      7,
+      2
+    ],
+    "eq_or_lt": [
+      8,
+      1
+    ],
+    "signed_gt": [
+      9,
+      1
+    ]
+  },
+  "notes": "As seis células `eq_bit_i` formam uma faixa de comparações bit a bit. `equal_prefix_*` e `unsigned_lt_*` ficam em etapas separadas por prioridade; a redução `unsigned_lt_low/high/unsigned_lt` conduz ao tratamento de sinal e à formação final de LT/GT. As inversões de A e do sinal de B ficam à esquerda, perto das derivações de entrada. Redes de fan-out mais exigentes: A_C2[0..5], B_C2[5], EQBIT_4..EQBIT_1, ULT e EQ. As células indicam agrupamento lógico, não prescrevem trajetos de fio."
+}

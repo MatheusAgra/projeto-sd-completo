@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # mux_resultado_8x6.vcd
 
 Waveform VCD real da execução Icarus 13.0 do testbench de mux contra o HDL exportado pelo Quartus a partir do BDF final. Registra cada seleção one-hot e os 64 padrões aplicados ao candidato selecionado.

@@ -1,3 +1,13 @@
+# Status atual da refatoração
+
+30/09/2026: os 16 BDF/BSF foram refatorados; checks offline concluídos com 1020/1020 destinos por bit, 26 testes de mutação e reprodução byte a byte dos 32 arquivos. As 36 invariantes funcionais/contratuais e 96 atribuições QSF/CSV foram conferidas. Detalhes e evidências em entrega/docs/REFATORACAO_VISUAL_TECNICA.md.
+
+Quartus/Icarus ausentes; por orientação do usuário, não foram instalados pelo agente. Análise/exportação nativa, 16 testes sobre HDL novo, compilação completa, recursos/pinos/avisos do Fitter e netlist funcional permanecem pendentes. O usuário está baixando as ferramentas. Nenhuma conferência visual ou screenshot foi realizada; o guia mantém os 16 módulos pendentes.
+
+SOF, HDL/netlist, ZIP, manifesto, relatório, figuras e resultados da implementação anterior são históricos. A aprovação técnica integral não está concluída. A retomada usa scripts/validar_nativo.py com caminhos reais das ferramentas.
+
+## Histórico anterior à refatoração
+
 # Status da execução
 
 Checkpoint em 30/09/2026. Implementação integrada, compilação e simulação concluídas; fechamento documental em andamento.

@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/sm_para_c2.vcd opened for output.
+tb_sm_para_c2 PASS checks=32
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_sm_para_c2.sv:24: $finish called at 32 (1s)

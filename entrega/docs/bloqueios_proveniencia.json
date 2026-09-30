@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "purpose": "Refuse stale native artifacts before invoking Quartus or Icarus",
+  "native_stages_executed": 0,
+  "pending_delivery_unchanged": true,
+  "guards": {
+    "delivery": {
+      "status": "PASS",
+      "exit": 1,
+      "expected_refusal": "Validação nativa dos BDF atuais pendente"
+    },
+    "hdl": {
+      "status": "PASS",
+      "exit": 1,
+      "expected_refusal": "HDL atual ainda não exportado"
+    },
+    "netlist": {
+      "status": "PASS",
+      "exit": 1,
+      "expected_refusal": "Compilação dos BDF refatorados ainda pendente"
+    }
+  }
+}

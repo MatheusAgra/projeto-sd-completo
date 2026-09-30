@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # bcd_7seg.v
 
 HDL exportado nativamente do BDF `bcd_7seg.bdf` pelo Quartus 21.1. Usado apenas para simulacao e geracao do BSF; nao consta como fonte no QSF. Portas conferidas automaticamente contra `interfaces.json`. Implementacao estrutural derivada dos conectores reais.

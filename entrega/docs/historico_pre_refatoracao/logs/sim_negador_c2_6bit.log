@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/negador_c2_6bit.vcd opened for output.
+tb_negador_c2_6bit PASS checks=64
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_negador_c2_6bit.sv:22: $finish called at 64 (1s)

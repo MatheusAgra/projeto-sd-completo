@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "module": "somador_subtrator_5bit",
+  "instances": {
+    "xor_sub_0": [0, 0],
+    "xor_sub_1": [0, 2],
+    "xor_sub_2": [0, 4],
+    "xor_sub_3": [0, 6],
+    "xor_sub_4": [0, 8],
+    "fa_0": [2, 0],
+    "fa_1": [2, 2],
+    "fa_2": [2, 4],
+    "fa_3": [2, 6],
+    "fa_4": [2, 8]
+  },
+  "notes": [
+    "Faixas 0,2,4,6,8 representam os bits 0..4; xor_sub_i fica na mesma faixa e próximo horizontalmente de fa_i.",
+    "B[i] e SUB alimentam xor_sub_i; cada BX[i] liga ao pino B de fa_i, e A[i] liga ao pino A da mesma etapa.",
+    "SUB tem fan-out para todos os XOR e para Cin de fa_0. Faça uma derivação contínua de controle sem conectar SUB a carries subsequentes.",
+    "Propagação explícita: fa_0.Cout -> fa_1.Cin -> fa_2.Cin -> fa_3.Cin -> fa_4.Cin. Cada fa_i.S vai a R[i] e o carry terminal de fa_4 vai a Cout.",
+    "Preservar índices 0..4 e a largura de cinco bits; não inverter a ordem por causa da direção dos barramentos. Todas as saídas têm destino ou porta contratual."
+  ]
+}

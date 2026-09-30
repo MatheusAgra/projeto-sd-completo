@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "module": "ula_core",
+  "instances": {
+    "conv_a": [
+      0,
+      0
+    ],
+    "conv_b": [
+      0,
+      1
+    ],
+    "logica": [
+      0,
+      2
+    ],
+    "aritmetica": [
+      1,
+      0
+    ],
+    "negacao_b": [
+      1,
+      1
+    ],
+    "comparacao": [
+      1,
+      2
+    ],
+    "controle": [
+      1,
+      3
+    ],
+    "selecao": [
+      2,
+      0
+    ],
+    "status_eq": [
+      2,
+      1
+    ],
+    "status_gt": [
+      2,
+      2
+    ],
+    "status_lt": [
+      2,
+      3
+    ],
+    "zero_0": [
+      2,
+      4
+    ],
+    "zero_1": [
+      2,
+      5
+    ],
+    "zero_2": [
+      2,
+      6
+    ],
+    "zero_3": [
+      2,
+      7
+    ],
+    "zero_4": [
+      2,
+      8
+    ],
+    "zero_5": [
+      2,
+      9
+    ],
+    "status_final": [
+      3,
+      0
+    ]
+  },
+  "notes": [
+    "conv_a e conv_b convertem operandos antes dos blocos aritmético e comparador; logica usa diretamente A/B em sinal-magnitude.",
+    "Aritmética, negação, comparação e lógica entregam candidatos ao mux selecionado por controle; agrupar os blocos de processamento antes da seleção.",
+    "AC2 e BC2 têm fan-out para aritmética, negação/comparação; D alimenta mux e três portas de STATUS, mantendo cada barramento contínuo.",
+    "ZERO[5..0] é formado por seis constantes GND para os candidatos C3..C5; STATUS reúne EQS/GTS/LTS conforme os enables D[3..5]."
+  ]
+}

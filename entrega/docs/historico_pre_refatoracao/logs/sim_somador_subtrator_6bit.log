@@ -1,0 +1,3 @@
+VCD info: dumpfile waveforms/somador_subtrator_6bit.vcd opened for output.
+tb_somador_subtrator_6bit PASS checks=8192
+C:\Users\mathe\CIn\projeto-sd-completo\entrega\simulation\tb_somador_subtrator_6bit.sv:31: $finish called at 8192 (1s)

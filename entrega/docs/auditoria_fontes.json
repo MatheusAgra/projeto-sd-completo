@@ -1,7 +1,20 @@
 {
   "status": "PASS",
-  "comment_audit_files": 88,
+  "comment_audit_files": 106,
   "legal_header_files": [
+    "config/primitivas/and2.bsf",
+    "config/primitivas/and3.bsf",
+    "config/primitivas/and4.bsf",
+    "config/primitivas/and6.bsf",
+    "config/primitivas/gnd.bsf",
+    "config/primitivas/not.bsf",
+    "config/primitivas/or2.bsf",
+    "config/primitivas/or3.bsf",
+    "config/primitivas/or4.bsf",
+    "config/primitivas/or8.bsf",
+    "config/primitivas/vcc.bsf",
+    "config/primitivas/xnor.bsf",
+    "config/primitivas/xor.bsf",
     "modulos/bcd_7seg.bdf",
     "modulos/bcd_7seg.bsf",
     "modulos/bin_bcd.bdf",
@@ -51,6 +64,6 @@
     "simulation/generated/ula_de2_115.v",
     "simulation/netlist/ula_de2_115.vo"
   ],
-  "compared_source_files": 66,
+  "compared_source_files": 0,
   "documentation_coverage": "PASS"
 }

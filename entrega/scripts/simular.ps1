@@ -9,6 +9,15 @@ $projectRoot = Split-Path -Parent $entregaRoot
 $simulationRoot = Join-Path $entregaRoot 'simulation'
 $generatedRoot = Join-Path $simulationRoot 'generated'
 $logsRoot = Join-Path $entregaRoot 'docs\logs'
+$provenancePath = Join-Path $entregaRoot 'docs/preparacao_atual.json'
+if (-not (Test-Path -LiteralPath $provenancePath)) { throw 'Proveniência atual ausente; exporte os BDF pelo preparar.py antes de simular.' }
+$provenance = Get-Content -LiteralPath $provenancePath -Raw | ConvertFrom-Json
+if ($provenance.status -ne 'PASS') { throw 'HDL atual ainda não exportado dos BDF refatorados; testes sobre HDL histórico não aprovam esta revisão.' }
+foreach ($property in $provenance.modules.PSObject.Properties) {
+    $bdfPath = Join-Path $entregaRoot ('modulos/' + $property.Name + '.bdf')
+    $verilogPath = Join-Path $generatedRoot ($property.Name + '.v')
+    if ((Get-FileHash -LiteralPath $bdfPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $property.Value.bdf_sha256 -or (Get-FileHash -LiteralPath $verilogPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $property.Value.verilog_sha256) { throw ('Proveniência divergente: ' + $property.Name) }
+}
 $modules = @('somador_1bit', 'sm_para_c2', 'somador_subtrator_6bit', 'c2_para_sm', 'negador_c2_6bit', 'modulo2_soma_sub', 'comparador_c2_6bit', 'logica_5bit', 'decodificador_operacao', 'mux_resultado_8x6', 'ula_core', 'somador_subtrator_5bit', 'bin_bcd', 'bcd_7seg', 'display_decimal_2digitos', 'ula_de2_115')
 New-Item -ItemType Directory -Force -Path $logsRoot,(Join-Path $simulationRoot 'waveforms') | Out-Null
 if ($QuestaPath) {

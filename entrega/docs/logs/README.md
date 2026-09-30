@@ -1,3 +1,11 @@
+# Logs da refatoração atual
+
+`refatoracao_offline.log` registra os checks estruturais, geométricos, contratos, invariantes e reprodução. `refatoracao_testes_geometria.log` registra os 26 testes do auditor. `refatoracao_auditoria_fontes.log` registra a cobertura documental e de avisos legais. `refatoracao_ferramentas_ausentes.log` registra a recusa por ausência de Quartus/Icarus, sem etapas nativas executadas. `refatoracao_bloqueio_delivery.log`, `refatoracao_bloqueio_hdl.log` e `refatoracao_bloqueio_netlist.log` registram as recusas esperadas de artefatos históricos.
+
+## Histórico anterior à refatoração visual
+
+Os demais logs abaixo não representam os BDF atuais. Resultados atuais e pendências estão em [REFATORACAO_VISUAL_TECNICA.md](../REFATORACAO_VISUAL_TECNICA.md).
+
 # Logs de compilação e simulação
 
 `compile_<modulo>.log` e `sim_<modulo>.log` guardam as saídas do fluxo Icarus. `compile_all.log` e `sim_<modulo>.log` podem ser produzidos pela alternativa Questa em `run.do`.

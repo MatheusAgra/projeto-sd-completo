@@ -1,3 +1,5 @@
+> Evidência histórica anterior à refatoração dos BDF: não foi reexportada, ressimulada nem regenerada para esta geometria. Consulte docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # sm_para_c2.v
 
 HDL exportado nativamente do BDF `sm_para_c2.bdf` pelo Quartus 21.1. Usado apenas para simulacao e geracao do BSF; nao consta como fonte no QSF. Portas conferidas automaticamente contra `interfaces.json`. Implementacao estrutural derivada dos conectores reais.

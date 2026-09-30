@@ -1,3 +1,5 @@
+> Histórico anterior à refatoração visual. O ZIP, manifesto, SOF, relatório, figuras e logs anteriores não representam os BDF atuais. Os novos checks e pendências estão em docs/REFATORACAO_VISUAL_TECNICA.md.
+
 # RELATORIO.docx
 
 ## Objetivo

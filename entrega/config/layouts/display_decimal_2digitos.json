@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "module": "display_decimal_2digitos",
+  "instances": {
+    "convert_mag": [
+      0,
+      0
+    ],
+    "decode_dez": [
+      1,
+      0
+    ],
+    "decode_uni": [
+      1,
+      1
+    ],
+    "disable_mask": [
+      1,
+      2
+    ],
+    "mask_dez_0": [
+      2,
+      0
+    ],
+    "mask_uni_0": [
+      2,
+      1
+    ],
+    "mask_dez_1": [
+      2,
+      2
+    ],
+    "mask_uni_1": [
+      2,
+      3
+    ],
+    "mask_dez_2": [
+      2,
+      4
+    ],
+    "mask_uni_2": [
+      2,
+      5
+    ],
+    "mask_dez_3": [
+      2,
+      6
+    ],
+    "mask_uni_3": [
+      2,
+      7
+    ],
+    "mask_dez_4": [
+      2,
+      8
+    ],
+    "mask_uni_4": [
+      2,
+      9
+    ],
+    "mask_dez_5": [
+      2,
+      10
+    ],
+    "mask_uni_5": [
+      2,
+      11
+    ],
+    "mask_dez_6": [
+      2,
+      12
+    ],
+    "mask_uni_6": [
+      2,
+      13
+    ]
+  },
+  "notes": [
+    "O fluxo vai de convert_mag para dois decodificadores independentes, um para dezenas e outro para unidades, e termina em máscaras por segmento.",
+    "ENABLE é invertido uma vez em DISABLED e distribuído às 14 portas OR; tornar o fan-out comum contínuo.",
+    "DEZ_SEG e UNI_SEG são canais separados de sete bits; manter cada máscara alinhada ao mesmo índice de segmento e as interfaces externas intactas."
+  ]
+}

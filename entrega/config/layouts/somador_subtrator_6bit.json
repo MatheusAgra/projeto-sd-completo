@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "module": "somador_subtrator_6bit",
+  "instances": {
+    "xor_sub_0": [0, 0],
+    "xor_sub_1": [0, 2],
+    "xor_sub_2": [0, 4],
+    "xor_sub_3": [0, 6],
+    "xor_sub_4": [0, 8],
+    "xor_sub_5": [0, 10],
+    "fa_0": [2, 0],
+    "fa_1": [2, 2],
+    "fa_2": [2, 4],
+    "fa_3": [2, 6],
+    "fa_4": [2, 8],
+    "fa_5": [2, 10]
+  },
+  "notes": [
+    "Faixas 0,2,4,6,8,10 representam os bits 0..5; cada xor_sub_i fica alinhado e próximo de fa_i.",
+    "B[i] e SUB alimentam xor_sub_i; BX[i] segue ao pino B de fa_i, enquanto A[i] chega ao pino A da etapa de mesmo índice.",
+    "SUB ramifica aos seis XOR e ao Cin inicial de fa_0. Os Cin das etapas 1..5 recebem exclusivamente os carries predecessores.",
+    "Ligar fa_0.Cout -> fa_1.Cin -> fa_2.Cin -> fa_3.Cin -> fa_4.Cin -> fa_5.Cin por trajetos físicos contínuos.",
+    "Cada fa_i.S vai a R[i]; fa_5.Cout vai à porta Cout. Preservar bit order 0..5 e larguras; não há saída descartada."
+  ]
+}

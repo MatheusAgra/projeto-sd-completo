@@ -63,7 +63,7 @@ def main():
                 raise ValueError(f'Fonte extraida divergente: {relative}')
             compared.append(relative.as_posix())
     result = {'status':'PASS', 'comment_audit_files':len(checked), 'legal_header_files':sorted(set(legal)), 'compared_source_files':len(compared), 'documentation_coverage':'PASS'}
-    (root / 'docs/auditoria_fontes.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
+    (root / 'docs/auditoria_fontes.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps(result, indent=2))
 
 

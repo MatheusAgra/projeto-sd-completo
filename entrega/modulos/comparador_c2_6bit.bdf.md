@@ -1,3 +1,9 @@
+## Representação atual
+
+Refatorado com config/layouts, troncos/ramificações físicos e símbolos canônicos coerentes entre BDF e BSF. O auditor geométrico lê o BDF final e compara portas e bits com o grafo/contrato; resultados atuais em docs/REFATORACAO_VISUAL_TECNICA.md e docs/refatoracao_tecnica.json. Regeneração determinística conferida. Análise/exportação Quartus, testes HDL novos e conferência visual pendentes. As verificações nativas descritas abaixo pertencem à revisão anterior.
+
+> Estado da refatoração em 30/09/2026: este registro descreve a revisão ANTERIOR. Os BDF/BSF novos exigem novas exportações e testes. Veja docs/REFATORACAO_VISUAL_TECNICA.md; Quartus/Icarus e conferência visual permanecem pendentes.
+
 # comparador_c2_6bit.bdf
 
 Este BDF compara dois valores signed de seis bits em complemento de dois. `A_C2[5..0]` e `B_C2[5..0]` são entradas; `EQ`, `GT` e `LT` são saídas escalares. O domínio completo é −32 a +31.

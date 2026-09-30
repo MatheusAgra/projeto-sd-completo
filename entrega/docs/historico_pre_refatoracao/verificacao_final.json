@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "modules": 16,
+  "pins_verified": 96,
+  "sequential_registers": 0,
+  "memory_bits": 0,
+  "dsp_elements": 0,
+  "sof_sha256": "42e9b19a48a38a36f0bc3bc9fcd2d7a49ac828c207be5762bab68065b5e14069"
+}

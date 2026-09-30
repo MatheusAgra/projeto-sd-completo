@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "module": "somador_1bit",
+  "instances": {
+    "fa_xor_ab": [1, 0],
+    "fa_xor_pcin": [3, 0],
+    "fa_and_ab": [1, 3],
+    "fa_and_pcin": [3, 3],
+    "fa_or_carry": [5, 3]
+  },
+  "notes": [
+    "Faixa 0: caminho da soma A/B -> fa_xor_ab -> fa_xor_pcin -> S; Cin entra no segundo XOR.",
+    "Faixa 3: caminho de carry A/B -> fa_and_ab e fa_P/Cin -> fa_and_pcin; fa_G e fa_H seguem ao fa_or_carry e Cout.",
+    "fa_P tem fan-out para o XOR da soma e para o AND de carry; A e B têm fan-out entre XOR e AND. Cin alimenta o XOR e o AND da segunda parcela de carry.",
+    "Todas as cinco saídas das primitivas são consumidas ou terminam nas portas de saída S/Cout; não há saída descartada."
+  ]
+}

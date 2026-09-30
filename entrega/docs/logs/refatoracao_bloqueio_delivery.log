@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\danie\projeto-sd-completo\entrega\scripts\verificar_entrega.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\danie\projeto-sd-completo\entrega\scripts\verificar_entrega.py", line 25, in main
+    raise ValueError('Validação nativa dos BDF atuais pendente; logs/HDL anteriores não aprovam esta revisão')
+ValueError: Validação nativa dos BDF atuais pendente; logs/HDL anteriores não aprovam esta revisão
